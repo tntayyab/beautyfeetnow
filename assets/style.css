@@ -71,10 +71,11 @@ strong { font-weight: 700; color: var(--ink); }
    ========================================================================== */
 .site-header { background: var(--surface); border-bottom: 1px solid var(--line); position: relative; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap; }
-.logo { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; text-decoration: none; color: var(--ink); font: 700 1.5rem/1 var(--font-head); letter-spacing: -0.02em; }
-.logo svg { width: 34px; height: 34px; flex: none; }
-.logo .glow { fill: var(--accent); }
-.logo .frame { fill: none; stroke: var(--primary); stroke-width: 2.2; stroke-linejoin: round; stroke-linecap: round; }
+.logo { display: inline-flex; align-items: center; min-height: 48px; text-decoration: none; }
+.logo img { height: 42px; width: auto; max-width: 240px; object-fit: contain; display: block; }
+@media (max-width: 767px) {
+  .logo img { height: 35px; max-width: 190px; }
+}
 .nav { display: flex; flex-wrap: wrap; gap: 4px 6px; }
 .nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 14px; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 1.05rem; white-space: nowrap; border-radius: var(--btn-radius); transition: background .15s, color .15s; }
 .nav a:hover, .nav a[aria-current="page"] { background: var(--accent-soft); color: var(--primary); text-decoration: none; }
