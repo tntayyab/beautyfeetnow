@@ -1,0 +1,85 @@
+{
+  "slug": "how-to-tell-if-you-have-flat-feet-or-high-arches",
+  "categorySlug": "orthotics-and-insoles",
+  "categoryName": "Orthotics and Insoles",
+  "keyword": "how to tell if you have flat feet or high arches",
+  "title": "How to Tell If You Have Flat Feet or High Arches: The 3-Step Wet Paper Footprint Test",
+  "metaDescription": "Accurately determine your foot arch type at home with the 3-step Wet Paper Test. Learn how to diagnose flat feet (pes planus), normal, or high arches (pes cavus).",
+  "readTime": "9 min read",
+  "date": "2026-11-01T15:30:00+00:00",
+  "formattedDate": "November 1, 2026",
+  "directAnswer": "To determine whether you have flat feet, normal arches, or high arches, perform the 3-step Wet Paper Footprint Test. Wet the bottom of your bare foot in shallow water, step firmly onto a piece of dark cardboard or brown craft paper, and inspect the imprint. A complete, solid footprint with no inward curve indicates flat feet (pes planus); a footprint showing half the arch width indicates normal arches; a thin outer strip or detached heel and forefoot indicates high arches (pes cavus).",
+  "takeaways": [
+    "The Wet Paper Test provides 90% diagnostic correlation with podiatric static arch assessments.",
+    "Flat feet (pes planus) display a solid footprint with zero arch indentation.",
+    "High arches (pes cavus) show only a narrow outer line connecting the ball and heel.",
+    "Check shoe wear patterns: inner heel wear indicates flat feet; outer tread wear indicates high arches.",
+    "The Navicular Drop Test measures whether your arch sinks more than 10 mm under weight-bearing."
+  ],
+  "videoId": "aK_WpE17xR4",
+  "videoTitle": "How to Know Your Foot Arch Type at Home - Easy Wet Paper Test",
+  "image1": {
+    "file": "wet-paper-footprint.webp",
+    "alt": "Wet paper footprint test comparing flat, normal, and high arch impressions",
+    "caption": "Figure 1: Comparison of wet footprint imprints across the three primary human foot arch categories."
+  },
+  "image2": {
+    "file": "arch-height-measurement.webp",
+    "alt": "Podiatrist measuring navicular height and arch displacement",
+    "caption": "Figure 2: Clinical measurement of navicular bone height from the floor during full weight-bearing."
+  },
+  "diagram1": {
+    "caption": "Vector Diagram 1: The 3 Arch Footprint Imprint Signatures",
+    "svg": "<svg viewBox=\"0 0 800 350\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#0F172A;font-family:system-ui,sans-serif;\">\n  <rect width=\"800\" height=\"350\" fill=\"#0F172A\"/>\n  <text x=\"40\" y=\"38\" fill=\"#F8FAFC\" font-size=\"18\" font-weight=\"700\">WET PAPER FOOTPRINT CLASSIFICATION GUIDE</text>\n  <rect x=\"40\" y=\"80\" width=\"220\" height=\"230\" rx=\"8\" fill=\"#1E293B\" stroke=\"#38BDF8\" stroke-width=\"2\"/>\n  <text x=\"60\" y=\"115\" fill=\"#38BDF8\" font-size=\"16\" font-weight=\"700\">Flat Feet (Low Arch)</text>\n  <path d=\"M 120 140 Q 110 190 120 250 Q 150 250 170 250 Q 180 190 170 140 Z\" fill=\"#0284C7\"/>\n  <text x=\"55\" y=\"280\" fill=\"#CBD5E1\" font-size=\"12\">• Imprint is solid & wide</text>\n  <text x=\"55\" y=\"298\" fill=\"#CBD5E1\" font-size=\"12\">• Prone to overpronation</text>\n  <rect x=\"290\" y=\"80\" width=\"220\" height=\"230\" rx=\"8\" fill=\"#1E293B\" stroke=\"#34D399\" stroke-width=\"2\"/>\n  <text x=\"310\" y=\"115\" fill=\"#34D399\" font-size=\"16\" font-weight=\"700\">Normal (Medium Arch)</text>\n  <path d=\"M 370 140 Q 365 190 380 250 Q 400 250 420 250 Q 410 190 420 140 Z\" fill=\"#059669\"/>\n  <text x=\"305\" y=\"280\" fill=\"#CBD5E1\" font-size=\"12\">• Moderate inward curve (~50%)</text>\n  <text x=\"305\" y=\"298\" fill=\"#CBD5E1\" font-size=\"12\">• Natural shock distribution</text>\n  <rect x=\"540\" y=\"80\" width=\"220\" height=\"230\" rx=\"8\" fill=\"#1E293B\" stroke=\"#F59E0B\" stroke-width=\"2\"/>\n  <text x=\"560\" y=\"115\" fill=\"#F59E0B\" font-size=\"16\" font-weight=\"700\">High Arch (Pes Cavus)</text>\n  <path d=\"M 620 140 L 620 250 L 635 250 L 635 140 Z\" fill=\"#D97706\"/>\n  <text x=\"555\" y=\"280\" fill=\"#CBD5E1\" font-size=\"12\">• Thin line or broken contact</text>\n  <text x=\"555\" y=\"298\" fill=\"#CBD5E1\" font-size=\"12\">• Prone to underpronation/shock</text>\n</svg>"
+  },
+  "diagram2": {
+    "caption": "Vector Diagram 2: Insole Match According to Arch Diagnosis",
+    "svg": "<svg viewBox=\"0 0 800 320\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#0F172A;font-family:system-ui,sans-serif;\">\n  <rect width=\"800\" height=\"320\" fill=\"#0F172A\"/>\n  <text x=\"40\" y=\"38\" fill=\"#F8FAFC\" font-size=\"17\" font-weight=\"700\">CORRECTIVE INSOLE SELECTION MATRIX</text>\n  <rect x=\"40\" y=\"70\" width=\"220\" height=\"210\" rx=\"8\" fill=\"#1E293B\" stroke=\"#0284C7\" stroke-width=\"1.5\"/>\n  <text x=\"55\" y=\"105\" fill=\"#38BDF8\" font-size=\"15\" font-weight=\"700\">Flat Feet Needs:</text>\n  <text x=\"55\" y=\"135\" fill=\"#CBD5E1\" font-size=\"12\">• Low-to-medium rigid arch</text>\n  <text x=\"55\" y=\"155\" fill=\"#CBD5E1\" font-size=\"12\">• Deep heel cup (15mm+)</text>\n  <text x=\"55\" y=\"175\" fill=\"#CBD5E1\" font-size=\"12\">• Medial post for pronation</text>\n  <text x=\"55\" y=\"205\" fill=\"#38BDF8\" font-size=\"12\" font-weight=\"600\">Avoid: Aggressive high arches</text>\n  <rect x=\"290\" y=\"70\" width=\"220\" height=\"210\" rx=\"8\" fill=\"#1E293B\" stroke=\"#10B981\" stroke-width=\"1.5\"/>\n  <text x=\"305\" y=\"105\" fill=\"#34D399\" font-size=\"15\" font-weight=\"700\">Normal Arch Needs:</text>\n  <text x=\"305\" y=\"135\" fill=\"#CBD5E1\" font-size=\"12\">• Flexible anatomical arch</text>\n  <text x=\"305\" y=\"155\" fill=\"#CBD5E1\" font-size=\"12\">• Balanced heel cushioning</text>\n  <text x=\"305\" y=\"175\" fill=\"#CBD5E1\" font-size=\"12\">• Standard athletic insole</text>\n  <text x=\"305\" y=\"205\" fill=\"#34D399\" font-size=\"12\" font-weight=\"600\">Goal: Impact dispersion</text>\n  <rect x=\"540\" y=\"70\" width=\"220\" height=\"210\" rx=\"8\" fill=\"#1E293B\" stroke=\"#F59E0B\" stroke-width=\"1.5\"/>\n  <text x=\"555\" y=\"105\" fill=\"#F59E0B\" font-size=\"15\" font-weight=\"700\">High Arch Needs:</text>\n  <text x=\"555\" y=\"135\" fill=\"#CBD5E1\" font-size=\"12\">• High contoured bridge</text>\n  <text x=\"555\" y=\"155\" fill=\"#CBD5E1\" font-size=\"12\">• Maximum shock damping foam</text>\n  <text x=\"555\" y=\"175\" fill=\"#CBD5E1\" font-size=\"12\">• Metatarsal support pad</text>\n  <text x=\"555\" y=\"205\" fill=\"#F59E0B\" font-size=\"12\" font-weight=\"600\">Goal: Fills the arch void</text>\n</svg>"
+  },
+  "table": {
+    "headers": [
+      "Arch Type",
+      "Wet Test Footprint Pattern",
+      "Shoe Outsole Wear Pattern",
+      "Common Injury Predisposition"
+    ],
+    "rows": [
+      [
+        "Low Arch / Flat Feet (Pes Planus)",
+        "Entire sole contact with no waist indentation",
+        "Excessive wear along the inside medial edge of sole",
+        "Plantar fasciitis, posterior tibial tendonitis, shin splints"
+      ],
+      [
+        "Normal / Neutral Arch",
+        "Moderate curve; arch area is half filled",
+        "Uniform wear across center forefoot and outer heel",
+        "Low biomechanical injury risk under proper footwear"
+      ],
+      [
+        "High Arch (Pes Cavus)",
+        "Very thin band or severed contact at midfoot",
+        "Heavy wear on outside lateral edge of shoe heel & ball",
+        "Metatarsalgia, peroneal tendonitis, stress fractures, ankle sprains"
+      ]
+    ]
+  },
+  "faqs": [
+    {
+      "q": "Can flat feet become normal arches with exercises?",
+      "a": "In adults with flexible flat feet, targeted intrinsic foot exercises (such as towel scrunches and short-foot toe curls) can strengthen the posterior tibial muscle and plantar fascia, improving dynamic arch stability, but cannot permanently remodel adult osseous bone structure."
+    },
+    {
+      "q": "Are high arches worse than flat feet?",
+      "a": "Both present unique biomechanical challenges. While flat feet suffer from excessive joint instability and overpronation strain, high arches are rigid and inflexible, absorbing ground shock poorly and transferring excessive impact into the knees, hips, and lower spine."
+    },
+    {
+      "q": "Why does my arch hurt if I buy an insole that is too high?",
+      "a": "If you have low or flexible flat arches and place a rigid high-arch insole inside your shoe, the hard peak of the orthotic will dig directly into your navicular bone and plantar nerve bundle, causing bruising and severe cramping."
+    },
+    {
+      "q": "How does footwear wear pattern confirm your arch type?",
+      "a": "Examine the bottom treads of an old pair of running or walking shoes. If the rubber is worn down smooth along the inside edge near the big toe, you overpronate (flat feet). If worn along the outside outer rim, you supinate (high arches)."
+    }
+  ]
+}

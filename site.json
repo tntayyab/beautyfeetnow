@@ -1,0 +1,56 @@
+{
+  "name": "Beauty Feet Now",
+  "domain": "beautyfeetnow.com",
+  "url": "https://beautyfeetnow.com",
+  "tagline": "The Authority on Healthy, Beautiful & Pain-Free Feet",
+  "description": "Expert-tested guides for soft, healthy, and pain-free feet. Compare electric callus removers, cracked heel creams, heated foot massagers, and orthotics by clinical efficacy and safety.",
+  "language": "en-US",
+  "author": {
+    "name": "Elena Rostova",
+    "title": "Podiatric Dermatology & Lower Extremity Biomechanics Specialist",
+    "url": "https://beautyfeetnow.com/about-us/"
+  },
+  "affiliate": {
+    "amazonTag": "beautyfeetnow-20"
+  },
+  "theme": {
+    "primaryColor": "#1C4E43",
+    "primaryHover": "#133931",
+    "accentColor": "#C7733B",
+    "bgColor": "#FAF7F2",
+    "surfaceColor": "#FFFFFF",
+    "textColor": "#1B1A17",
+    "mutedColor": "#534F49",
+    "borderColor": "#E8E2D7"
+  },
+  "categories": [
+    {
+      "slug": "callus-removers-and-tools",
+      "name": "Callus Removers and Tools",
+      "shortName": "Callus Removers",
+      "description": "Rechargeable high-torque grinders, diamond crystal rollers, nano-glass manual files, and callus rasp safety tools.",
+      "icon": "⚡"
+    },
+    {
+      "slug": "foot-creams-and-lotions",
+      "name": "Foot Creams and Lotions",
+      "shortName": "Creams & Lotions",
+      "description": "High-potency 40% Urea creams, exfoliating AHA foot peels, deep fissure ointments, and overnight occlusion heel balms.",
+      "icon": "💧"
+    },
+    {
+      "slug": "foot-massagers-and-spas",
+      "name": "Foot Massagers and Spas",
+      "shortName": "Massagers & Spas",
+      "description": "Heated deep-kneading shiatsu rollers, dynamic pneumatic air compression units, and hydrotherapy thermal foot spas.",
+      "icon": "💆"
+    },
+    {
+      "slug": "orthotics-and-insoles",
+      "name": "Orthotics and Insoles",
+      "shortName": "Orthotics & Insoles",
+      "description": "Biomechanical rigid arch supports, deep heel stabilizing cups, metatarsal pads, and shock-absorbing inserts.",
+      "icon": "👟"
+    }
+  ]
+}
