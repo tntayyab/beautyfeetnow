@@ -114,8 +114,8 @@ def render_article_html(art):
         ]
     }
 
-    # Left TOC links
-    toc_links_html = "".join([f'<li><a href="#{s["id"]}">{idx+1}. {s["title"].split(". ")[-1]}</a></li>\n' for idx, s in enumerate(art['sections'])])
+    # Left TOC links (clean regex strip to guarantee single numbering)
+    toc_links_html = "".join([f'<li><a href="#{s["id"]}">{idx+1}. {re.sub(r"^\d+\.\s*", "", s["title"])}</a></li>\n' for idx, s in enumerate(art['sections'])])
     
     # Table headers & rows
     table_headers_html = "".join([f'<th>{h}</th>' for h in art['table']['headers']])
@@ -251,8 +251,8 @@ def render_article_html(art):
           </div>
             """
 
-        # After Section 7: Video Embed
-        elif idx == 7:
+        # Video Embed: Only embed if not already included in section content (prevents duplicate videos)
+        elif idx == 7 and not any("video-wrapper" in s.get('content', '') for s in art['sections']):
             body_sections_html += f"""
           <div class="video-wrapper">
             <iframe 
@@ -302,7 +302,7 @@ def render_article_html(art):
 {json.dumps(faq_schema, indent=2)}
 </script>
 </head>
-<body>
+<body class="is-post">
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header">
@@ -320,7 +320,7 @@ def render_article_html(art):
   </div>
 </header>
 
-<nav class="crumb" aria-label="Breadcrumb">
+<nav class="crumbs" aria-label="Breadcrumb">
   <div class="wrap">
     <ol>
       <li><a href="/">Home</a></li>
@@ -335,9 +335,9 @@ def render_article_html(art):
     
     <!-- 1. LEFT STICKY COLUMN: Table of Contents & Amazon Earning Box -->
     <aside class="toc-col" aria-label="Table of contents">
-      <div class="toc-col-inner">
-        <p class="toc-title">Table of contents</p>
-        <nav>
+      <div class="toc-stick">
+        <p class="toc-title">On this page</p>
+        <nav class="toc-side" aria-label="Table of contents">
           <ol>
             {toc_links_html}
             <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
@@ -426,7 +426,7 @@ def render_article_html(art):
 
     <!-- 3. RIGHT STICKY COLUMN: Amazon Top-3 Product Rail -->
     <aside class="rail-col" aria-label="Top podiatrist picks">
-      <div class="rail-col-inner">
+      <div class="rail">
         <div class="rail-head">
           <p class="rail-title">Top podiatrist picks</p>
           <span class="rail-sub">Tested for safety &amp; clinical efficacy</span>
