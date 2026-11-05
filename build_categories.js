@@ -48,11 +48,11 @@ const categories = [
     heading: 'Orthotics, Insoles & Arch Supports',
     lead: 'Compare podiatrist-grade rigid and semi-rigid orthotic inserts, plantar fasciitis heel cups, and cushioning insoles by arch height and shock absorption.',
     roundup: {
-      slug: 'best-electric-callus-removers',
-      title: '8 Best Electric Callus Removers for Smooth Feet (2026)',
-      desc: 'Tested biomechanical supports and essential pedicure devices for whole-foot alignment and daily walking comfort.',
+      slug: 'best-orthotic-insoles-for-flat-feet',
+      title: '8 Best Orthotic Insoles for Flat Feet (2026)',
+      desc: 'Biomechanical evaluations of rigid arch cradles, deep heel cups, and shock-absorbing metatarsal pads for collapsed arches and overpronation.',
       img: 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg',
-      tag: 'Featured Guide'
+      tag: 'Roundup Guide'
     }
   }
 ];

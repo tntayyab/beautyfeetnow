@@ -59,9 +59,97 @@ RELATED_POOL = [
     {'slug': 'signs-you-need-custom-orthotics-vs-otc-insoles', 'title': 'Signs You Need Custom Orthotics vs OTC Insoles', 'tag': 'Orthotics and Insoles', 'img': '/assets/images/custom-vs-otc-orthotics.webp'}
 ]
 
+# Tailored in-article top product recommendations
+TOP_PRODUCT_BY_SLUG = {
+    'how-to-use-electric-callus-remover-safely': {
+        'name': 'Amope Pedi Perfect Wet & Dry Electronic Foot File',
+        'asin': 'B018EN59VC',
+        'score': '9.8',
+        'img': 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg',
+        'why': 'Dual-speed waterproof roller with automatic pressure safety lock that prevents thermal friction burns during home callus removal.'
+    },
+    'nano-glass-foot-file-vs-electric-callus-remover': {
+        'name': 'Own Harmony CR900 High-Torque Rechargeable',
+        'asin': 'B00V498L3U',
+        'score': '9.6',
+        'img': 'https://m.media-amazon.com/images/I/71Xm06O6nOL._AC_SL1500_.jpg',
+        'why': 'High-torque 2,000 RPM motor with pressure sensor, delivering fast debulking speed without stalling against stubborn heel calluses.'
+    },
+    'why-do-foot-calluses-keep-coming-back': {
+        'name': 'PRITECH 3-Roller Rechargeable Electric Callus Remover',
+        'asin': 'B07DN9B4P5',
+        'score': '9.4',
+        'img': 'https://m.media-amazon.com/images/I/71m4+K8pC2L._AC_SL1500_.jpg',
+        'why': 'Three mineral quartz grits (fine, medium, coarse) and digital battery display for sustained routine prevention of recurrent hyperkeratosis.'
+    },
+    'urea-cream-20-vs-40-percent-difference': {
+        'name': 'PurOrganica 40% Urea Foot Cream with Tea Tree Oil',
+        'asin': 'B07N18L77P',
+        'score': '9.8',
+        'img': 'https://m.media-amazon.com/images/I/71eXGfLw2sL._AC_SL1500_.jpg',
+        'why': 'Maximum strength 40% clinical urea formula enriched with tea tree oil and aloe vera to dissolve thick keratin plaques within 7 days.'
+    },
+    'how-to-heal-deep-cracked-heels-overnight': {
+        'name': 'Ebanel 40% Urea Plus 2% Salicylic Acid Cream',
+        'asin': 'B075487B2S',
+        'score': '9.7',
+        'img': 'https://m.media-amazon.com/images/I/71C7kH9F8dL._AC_SL1500_.jpg',
+        'why': 'Dual-action 2% BHA and 40% urea keratolytic formula designed for intensive overnight occlusion repair under breathable cotton socks.'
+    },
+    'salicylic-acid-vs-lactic-acid-for-rough-feet': {
+        'name': 'CeraVe SA Renewing Foot Cream with Ceramides',
+        'asin': 'B00D7BZNT2',
+        'score': '9.3',
+        'img': 'https://m.media-amazon.com/images/I/71C7kH9F8dL._AC_SL1500_.jpg',
+        'why': 'Formulated with salicylic acid, ammonium lactate, and 3 essential ceramides to gently exfoliate rough skin while rebuilding the lipid barrier.'
+    },
+    'how-often-should-you-use-a-foot-massager': {
+        'name': 'Miko Shiatsu Foot Massager Machine with Deep Kneading & Heat',
+        'asin': 'B0797G8736',
+        'score': '9.8',
+        'img': 'https://m.media-amazon.com/images/I/71I7cK9y86L._AC_SL1500_.jpg',
+        'why': 'Equipped with an automatic 15-minute clinical timer, multi-axis shiatsu nodes, and gentle infrared heat to prevent plantar over-massage.'
+    },
+    'shiatsu-vs-air-compression-foot-massager': {
+        'name': 'RENPHO Heated Air Compression Foot Massager with Remote',
+        'asin': 'B07F2H1NQR',
+        'score': '9.6',
+        'img': 'https://m.media-amazon.com/images/I/71D0g8mN96L._AC_SL1500_.jpg',
+        'why': 'Dynamic multi-chamber air compression that gently compresses the dorsal and lateral foot compartments to stimulate circulation and ease swelling.'
+    },
+    'why-do-feet-burn-at-night-causes-and-relief': {
+        'name': 'Cloud Massage Shiatsu Foot & Calf Massager Machine',
+        'asin': 'B01FHOHVDC',
+        'score': '9.5',
+        'img': 'https://m.media-amazon.com/images/I/71eXwQv47UL._AC_SL1500_.jpg',
+        'why': 'Adjustable 360-degree positioning bar allows simultaneous therapeutic stimulation of the calf, Achilles tendon, and plantar nerve pathways.'
+    },
+    'rigid-vs-soft-orthotic-insoles-plantar-fasciitis': {
+        'name': 'Powerstep Pinnacle Arch Support Insoles',
+        'asin': 'B000KGOHCS',
+        'score': '9.7',
+        'img': 'https://m.media-amazon.com/images/I/71N7j2-wJzL._AC_SL1500_.jpg',
+        'why': 'Semi-rigid encapsulated arch cradle with dual-layer EVA cushioning clinically proven to relieve acute plantar fasciitis strain.'
+    },
+    'how-to-tell-if-you-have-flat-feet-or-high-arches': {
+        'name': 'Superfeet GREEN Professional-Grade High Arch Insoles',
+        'asin': 'B000XY5Q6C',
+        'score': '9.8',
+        'img': 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg',
+        'why': 'High-density rigid stabilizer cap and deep calcaneal heel cup that realigns overpronation and stabilizes collapsed medial arches.'
+    },
+    'signs-you-need-custom-orthotics-vs-otc-insoles': {
+        'name': 'WalkHero Plantar Fasciitis Severe Flat Feet Orthotics',
+        'asin': 'B075YB2J6Q',
+        'score': '9.4',
+        'img': 'https://m.media-amazon.com/images/I/71x4xNl97CL._AC_SL1500_.jpg',
+        'why': 'Accessible medical-grade anatomical support with silicone metatarsal pads and deep heel cup for daily walking and work boots.'
+    }
+}
+
 def render_article_html(art):
     side_rail = SIDE_RAIL.get(art['categorySlug'], SIDE_RAIL['callus-removers-and-tools'])
-    top_product = side_rail[0]
+    top_product = TOP_PRODUCT_BY_SLUG.get(art['slug'], side_rail[0])
     
     # Schemas
     article_schema = {
