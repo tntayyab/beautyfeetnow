@@ -8,9 +8,6 @@ function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
-ensureDir(path.join(__dirname, 'src', 'content', 'articles'));
-
-// Helper for HTML escaping
 function escapeHtml(str) {
   return str
     .replace(/&/g, '&amp;')
@@ -19,7 +16,6 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
-// Side Rail products mapping by category
 const sideRailData = {
   'callus-removers-and-tools': [
     { rank: 1, name: 'Amope Pedi Perfect Wet & Dry', score: '9.8', img: 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg', asin: 'B018EN59VC' },
@@ -43,34 +39,29 @@ const sideRailData = {
   ]
 };
 
-console.log('Generating 12 Master Articles...');
+console.log('Generating 12 Master Articles with Exact Senior Learning Network 3-Column Engine...');
 
 articles.forEach(art => {
-  // 1. Save JSON data
   const jsonPath = path.join(__dirname, 'src', 'content', 'articles', `${art.slug}.json`);
+  ensureDir(path.dirname(jsonPath));
   fs.writeFileSync(jsonPath, JSON.stringify(art, null, 2), 'utf8');
 
-  // 2. Prepare HTML directory
   const pageDir = path.join(__dirname, art.slug);
   ensureDir(pageDir);
 
   const sideRail = sideRailData[art.categorySlug] || sideRailData['callus-removers-and-tools'];
 
-  // Build FAQ Schema
+  // Schema blocks
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": art.faqs.map(f => ({
       "@type": "Question",
       "name": f.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": f.a
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
     }))
   };
 
-  // Build Article Schema
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -99,7 +90,6 @@ articles.forEach(art => {
     "image": [`${BASE_URL}/assets/images/${art.image1.file}`]
   };
 
-  // Build Breadcrumb Schema
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -110,30 +100,26 @@ articles.forEach(art => {
     ]
   };
 
-  // Build Table Rows
   const tableHeadersHtml = art.table.headers.map(h => `<th>${h}</th>`).join('');
   const tableRowsHtml = art.table.rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
 
-  // Build FAQs HTML
   const faqsHtml = art.faqs.map(f => `
         <details>
           <summary>${f.q}</summary>
           <div><p>${f.a}</p></div>
         </details>`).join('');
 
-  // Build Takeaways List
   const takeawaysHtml = art.takeaways.map(t => `<li>${t}</li>`).join('');
 
-  // Build Side Rail HTML
   const sideRailHtml = sideRail.map(p => `
           <li class="rail-row">
             <span class="rail-rank">${p.rank}</span>
-            <img src="${p.img}" alt="${p.name}" width="60" height="60" loading="lazy">
+            <img src="${p.img}" alt="${p.name}" width="64" height="64" loading="lazy">
             <div class="rail-body">
               <a class="rail-name" href="https://www.amazon.com/dp/${p.asin}?tag=beautyfeetnow-20" target="_blank" rel="nofollow">${p.name}</a>
               <div class="rail-meta">
-                <span class="rail-score">Score: <b>${p.score}</b></span>
-                <a class="rail-go" href="https://www.amazon.com/dp/${p.asin}?tag=beautyfeetnow-20" target="_blank" rel="nofollow">Buy</a>
+                <span class="rail-score"><b>${p.score}</b>/10 our score</span>
+                <a class="rail-go" href="https://www.amazon.com/dp/${p.asin}?tag=beautyfeetnow-20" target="_blank" rel="nofollow">Check it</a>
               </div>
             </div>
           </li>`).join('');
@@ -216,129 +202,151 @@ ${JSON.stringify(faqSchema, null, 2)}
   </nav>
 
   <div class="layout has-toc">
-    <!-- Center Article Prose -->
-    <article class="article">
-      <div class="prose">
-        <span class="kicker">${art.categoryName}</span>
-        <h1>${art.title}</h1>
-        
-        <div class="meta">
-          <span>By <strong>Elena Rostova</strong> (Podiatry &amp; Skincare Specialist)</span>
-          <span>•</span>
-          <time datetime="${art.date}">${art.formattedDate}</time>
-          <span>•</span>
-          <span>${art.readTime}</span>
-        </div>
-
-        <!-- STRICT NO INTRO IMAGE: Begins directly with Direct Answer Box -->
-        <div class="answer">
-          <div class="answer-label">
-            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            Direct Answer &amp; Medical Summary
-          </div>
-          <p class="answer-lead">${art.directAnswer}</p>
-        </div>
-
-        <!-- KEY TAKEAWAYS BOX: Exactly 5 checkmark bullets -->
-        <div class="takeaways">
-          <div class="takeaways-head">
-            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Key Clinical Takeaways &amp; Rules
-          </div>
-          <ul class="takeaways-list">
-            ${takeawaysHtml}
-          </ul>
-        </div>
-
-        <!-- INLINE TABLE OF CONTENTS -->
-        <details class="toc-inline" open>
-          <summary>Table of Contents</summary>
+    <!-- 1. LEFT STICKY COLUMN: Table of Contents & Amazon Earning Box (Exact seniorlearningnetwork.com Parity) -->
+    <aside class="toc-col">
+      <div class="toc-stick">
+        <nav class="toc-side" aria-label="On this page">
+          <p class="toc-title">On this page</p>
           <ol>
-            <li><a href="#clinical-mechanism">1. Biological Mechanism &amp; Tissue Dynamics</a></li>
-            <li><a href="#testing-benchmarks">2. Laboratory Benchmarks &amp; Parameter Matrix</a></li>
-            <li><a href="#procedural-workflow">3. Clinical Treatment Protocol &amp; Decisions</a></li>
-            <li><a href="#video-demonstration">4. Expert Video Demonstration</a></li>
-            <li><a href="#frequently-asked-questions">5. Frequently Asked Questions (FAQ)</a></li>
+            <li><a href="#clinical-mechanism">1. Biological Mechanism</a></li>
+            <li><a href="#testing-benchmarks">2. Testing Benchmarks</a></li>
+            <li><a href="#procedural-workflow">3. Treatment Protocol</a></li>
+            <li><a href="#video-demonstration">4. Video Demonstration</a></li>
+            <li><a href="#frequently-asked-questions">5. FAQs</a></li>
           </ol>
-        </details>
-
-        <h2 id="clinical-mechanism">1. Biological Mechanism &amp; Tissue Dynamics</h2>
-        <p>The human foot bears up to 1.5 times body weight during normal walking and up to 3 times body weight during running. The epidermal stratum corneum on the soles of our feet contains up to 50 compacted layers of dead, anucleate corneocyte cells bound by specialized lipid envelopes (ceramides, cholesterol, and free fatty acids).</p>
-        <p>When shear stress, unyielding footwear friction, or abnormal gait mechanics overload specific pressure points, basal keratinocytes accelerate the production of cytokeratins. Without proper desquamation, these cells accumulate into dense, rigid hyperkeratotic plaques. Understanding the biological boundary between thickened protective stratum corneum and vulnerable living dermis is essential for safe, pain-free restoration.</p>
-
-        <!-- RICH MEDIA 1: WebP Image 1 -->
-        <figure class="article-figure">
-          <img src="/assets/images/${art.image1.file}" alt="${art.image1.alt}" width="800" height="533" loading="lazy">
-          <figcaption>${art.image1.caption}</figcaption>
-        </figure>
-
-        <h2 id="testing-benchmarks">2. Laboratory Benchmarks &amp; Parameter Matrix</h2>
-        <p>To eliminate subjective guesswork, our clinical evaluation measures quantifiable physical boundaries: rotational friction thresholds, epidermal moisture retention (measured via electrical capacitance corneometry), and pressure dispersion across dynamic ground strikes.</p>
-
-        <!-- RICH MEDIA 2: SVG Diagram 1 -->
-        <div class="technical-diagram">
-          ${art.diagram1.svg}
-          <div class="technical-diagram-caption">${art.diagram1.caption}</div>
-        </div>
-
-        <p>The technical data matrix below outlines the critical clinical parameters verified in our bench tests, contrasting safe physiological ranges against high-risk overuse levels:</p>
-
-        <!-- TECHNICAL DATA TABLE -->
-        <div class="scroll">
-          <table>
-            <thead>
-              <tr>${tableHeadersHtml}</tr>
-            </thead>
-            <tbody>
-              ${tableRowsHtml}
-            </tbody>
-          </table>
-        </div>
-
-        <!-- RICH MEDIA 3: WebP Image 2 -->
-        <figure class="article-figure">
-          <img src="/assets/images/${art.image2.file}" alt="${art.image2.alt}" width="800" height="533" loading="lazy">
-          <figcaption>${art.image2.caption}</figcaption>
-        </figure>
-
-        <h2 id="procedural-workflow">3. Clinical Treatment Protocol &amp; Decisions</h2>
-        <p>Achieving permanent foot health requires a structured procedural approach. Rushing into aggressive physical shaving or using untested harsh peeling agents without addressing moisture barriers or biomechanics inevitably triggers reactive hyperkeratosis.</p>
-
-        <!-- RICH MEDIA 4: SVG Diagram 2 -->
-        <div class="technical-diagram">
-          ${art.diagram2.svg}
-          <div class="technical-diagram-caption">${art.diagram2.caption}</div>
-        </div>
-
-        <p>Follow the calibrated decision steps outlined in the architecture diagram above. Combine mechanical care with targeted keratolytic hydration (such as 40% urea cream) and structural biomechanical support to ensure durable, pain-free results.</p>
-
-        <h2 id="video-demonstration">4. Expert Video Demonstration</h2>
-        <p>Watch this clinical walkthrough demonstrating the exact hands-on technique, pressure control, and anatomical positioning recommended by certified physical therapists and podiatrists:</p>
-
-        <!-- RICH MEDIA 5: 16:9 YouTube Video Embed -->
-        <div class="video-wrapper">
-          <iframe src="https://www.youtube-nocookie.com/embed/${art.videoId}" title="${escapeHtml(art.videoTitle)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-        </div>
-
-        <h2 id="frequently-asked-questions">5. Frequently Asked Questions (FAQ)</h2>
-        <div class="faq">
-          ${faqsHtml}
-        </div>
-
-        <div class="guide-note">
-          <p><strong>Medical Transparency:</strong> Written and reviewed by Elena Rostova, Podiatric Dermatology &amp; Biomechanics Specialist. All evaluations adhere to strict non-destructive testing protocols. If you experience bleeding, severe diabetes complications, or numbness, consult a physician immediately.</p>
-        </div>
-
+        </nav>
+        <aside class="toc-earn" aria-label="Earning information">
+          <p class="toc-earn-title">Earning information</p>
+          <p>As an Amazon Associate, we earn from qualifying purchases, at no extra cost to you.</p>
+        </aside>
       </div>
-    </article>
+    </aside>
 
-    <!-- Right Sticky Product Rail -->
-    <aside class="rail-col" aria-label="Sidebar">
+    <!-- 2. CENTER MAIN COLUMN: Article Header & Prose -->
+    <div>
+      <article class="article">
+        <div class="prose">
+          <span class="kicker">${art.categoryName}</span>
+          <h1>${art.title}</h1>
+          
+          <div class="meta">
+            <span>By <strong>Elena Rostova</strong> (Podiatry Specialist)</span>
+            <span>•</span>
+            <time datetime="${art.date}">${art.formattedDate}</time>
+            <span>•</span>
+            <span>${art.readTime}</span>
+          </div>
+
+          <!-- STRICT NO INTRO IMAGE: Begins directly with Direct Answer Box -->
+          <div class="answer">
+            <div class="answer-label">
+              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Direct Answer &amp; Medical Summary
+            </div>
+            <p class="answer-lead">${art.directAnswer}</p>
+          </div>
+
+          <!-- KEY TAKEAWAYS BOX: Exactly 5 checkmark bullets -->
+          <div class="takeaways">
+            <div class="takeaways-head">
+              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Key Clinical Takeaways &amp; Rules
+            </div>
+            <ul class="takeaways-list">
+              ${takeawaysHtml}
+            </ul>
+          </div>
+
+          <!-- INLINE TABLE OF CONTENTS (Mobile fallback) -->
+          <details class="toc-inline" open>
+            <summary>Table of Contents</summary>
+            <ol>
+              <li><a href="#clinical-mechanism">1. Biological Mechanism &amp; Tissue Dynamics</a></li>
+              <li><a href="#testing-benchmarks">2. Laboratory Benchmarks &amp; Parameter Matrix</a></li>
+              <li><a href="#procedural-workflow">3. Clinical Treatment Protocol &amp; Decisions</a></li>
+              <li><a href="#video-demonstration">4. Expert Video Demonstration</a></li>
+              <li><a href="#frequently-asked-questions">5. Frequently Asked Questions (FAQ)</a></li>
+            </ol>
+          </details>
+
+          <h2 id="clinical-mechanism">1. Biological Mechanism &amp; Tissue Dynamics</h2>
+          <p>The human foot bears up to 1.5 times body weight during normal walking and up to 3 times body weight during running. The epidermal stratum corneum on the soles of our feet contains up to 50 compacted layers of dead, anucleate corneocyte cells bound by specialized lipid envelopes (ceramides, cholesterol, and free fatty acids).</p>
+          <p>When shear stress, unyielding footwear friction, or abnormal gait mechanics overload specific pressure points, basal keratinocytes accelerate the production of cytokeratins. Without proper desquamation, these cells accumulate into dense, rigid hyperkeratotic plaques. Understanding the biological boundary between thickened protective stratum corneum and vulnerable living dermis is essential for safe, pain-free restoration.</p>
+
+          <!-- RICH MEDIA 1: WebP Image 1 -->
+          <figure class="article-figure">
+            <img src="/assets/images/${art.image1.file}" alt="${art.image1.alt}" width="800" height="533" loading="lazy">
+            <figcaption>${art.image1.caption}</figcaption>
+          </figure>
+
+          <h2 id="testing-benchmarks">2. Laboratory Benchmarks &amp; Parameter Matrix</h2>
+          <p>To eliminate subjective guesswork, our clinical evaluation measures quantifiable physical boundaries: rotational friction thresholds, epidermal moisture retention (measured via electrical capacitance corneometry), and pressure dispersion across dynamic ground strikes.</p>
+
+          <!-- RICH MEDIA 2: SVG Diagram 1 -->
+          <div class="technical-diagram">
+            ${art.diagram1.svg}
+            <div class="technical-diagram-caption">${art.diagram1.caption}</div>
+          </div>
+
+          <p>The technical data matrix below outlines the critical clinical parameters verified in our bench tests, contrasting safe physiological ranges against high-risk overuse levels:</p>
+
+          <!-- TECHNICAL DATA TABLE -->
+          <div class="scroll">
+            <table>
+              <thead>
+                <tr>${tableHeadersHtml}</tr>
+              </thead>
+              <tbody>
+                ${tableRowsHtml}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- RICH MEDIA 3: WebP Image 2 -->
+          <figure class="article-figure">
+            <img src="/assets/images/${art.image2.file}" alt="${art.image2.alt}" width="800" height="533" loading="lazy">
+            <figcaption>${art.image2.caption}</figcaption>
+          </figure>
+
+          <h2 id="procedural-workflow">3. Clinical Treatment Protocol &amp; Decisions</h2>
+          <p>Achieving permanent foot health requires a structured procedural approach. Rushing into aggressive physical shaving or using untested harsh peeling agents without addressing moisture barriers or biomechanics inevitably triggers reactive hyperkeratosis.</p>
+
+          <!-- RICH MEDIA 4: SVG Diagram 2 -->
+          <div class="technical-diagram">
+            ${art.diagram2.svg}
+            <div class="technical-diagram-caption">${art.diagram2.caption}</div>
+          </div>
+
+          <p>Follow the calibrated decision steps outlined in the architecture diagram above. Combine mechanical care with targeted keratolytic hydration (such as 40% urea cream) and structural biomechanical support to ensure durable, pain-free results.</p>
+
+          <h2 id="video-demonstration">4. Expert Video Demonstration</h2>
+          <p>Watch this clinical walkthrough demonstrating the exact hands-on technique, pressure control, and anatomical positioning recommended by certified physical therapists and podiatrists:</p>
+
+          <!-- RICH MEDIA 5: 16:9 YouTube Video Embed -->
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube-nocookie.com/embed/${art.videoId}" title="${escapeHtml(art.videoTitle)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+
+          <h2 id="frequently-asked-questions">5. Frequently Asked Questions (FAQ)</h2>
+          <div class="faq">
+            ${faqsHtml}
+          </div>
+
+          <div class="guide-note">
+            <p><strong>Medical Transparency:</strong> Written and reviewed by Elena Rostova, Podiatric Dermatology &amp; Biomechanics Specialist. All evaluations adhere to strict non-destructive testing protocols. If you experience bleeding, severe diabetes complications, or numbness, consult a physician immediately.</p>
+          </div>
+
+        </div>
+      </article>
+    </div>
+
+    <!-- 3. RIGHT STICKY COLUMN: Products in this guide (Sticky Amazon Rail) -->
+    <aside class="rail-col" aria-label="Products on this page">
       <div class="rail">
-        <div class="rail-title">Top Recommended Tools</div>
-        <ul class="rail-list">
+        <p class="rail-title">Products in this guide</p>
+        <ol class="rail-list">
           ${sideRailHtml}
-        </ul>
+        </ol>
       </div>
 
       <div class="box" style="margin-top: 22px;">
@@ -394,96 +402,96 @@ ${JSON.stringify(faqSchema, null, 2)}
 </html>`;
 
   fs.writeFileSync(path.join(pageDir, 'index.html'), html, 'utf8');
-  console.log(`Generated: ${art.slug}/index.html`);
 });
 
-// Update sitemap.xml with all 12 articles
-const allUrls = [
-  { loc: `${BASE_URL}/`, priority: '1.0', changefreq: 'daily' },
-  { loc: `${BASE_URL}/callus-removers-and-tools/`, priority: '0.8', changefreq: 'weekly' },
-  { loc: `${BASE_URL}/foot-creams-and-lotions/`, priority: '0.8', changefreq: 'weekly' },
-  { loc: `${BASE_URL}/foot-massagers-and-spas/`, priority: '0.8', changefreq: 'weekly' },
-  { loc: `${BASE_URL}/orthotics-and-insoles/`, priority: '0.8', changefreq: 'weekly' },
-  { loc: `${BASE_URL}/best-electric-callus-removers/`, priority: '0.9', changefreq: 'weekly' },
-  { loc: `${BASE_URL}/best-cracked-heel-creams-with-urea/`, priority: '0.9', changefreq: 'weekly' },
-  { loc: `${BASE_URL}/best-heated-foot-massagers-for-plantar-fasciitis/`, priority: '0.9', changefreq: 'weekly' }
-];
+console.log('Successfully generated all 12 Master Articles with SLN 3-Column layout!');
 
-articles.forEach(art => {
-  allUrls.push({ loc: `${BASE_URL}/${art.slug}/`, priority: '0.9', changefreq: 'weekly' });
-});
+// =========================================================================
+// 2. UPGRADE 3 ROUNDUP GUIDES TO STRICT 3-COLUMN SLN LAYOUT
+// =========================================================================
 
-['about-us', 'how-we-test', 'contact-us', 'privacy-policy', 'terms-of-service', 'affiliate-disclosure'].forEach(leg => {
-  allUrls.push({ loc: `${BASE_URL}/${leg}/`, priority: '0.4', changefreq: 'monthly' });
-});
-
-const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls.map(u => `  <url>
-    <loc>${u.loc}</loc>
-    <lastmod>2026-11-04T15:00:00+00:00</lastmod>
-    <changefreq>${u.changefreq}</changefreq>
-    <priority>${u.priority}</priority>
-  </url>`).join('\n')}
-</urlset>`;
-
-fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemapXml, 'utf8');
-console.log('Updated sitemap.xml with', allUrls.length, 'URLs');
-
-// Update feed.xml with all articles
-const feedXml = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-  <channel>
-    <title>Beauty Feet Now</title>
-    <link>${BASE_URL}/</link>
-    <description>The Authority on Healthy, Beautiful &amp; Pain-Free Feet</description>
-    <language>en-us</language>
-${articles.map(art => `    <item>
-      <title>${escapeHtml(art.title)}</title>
-      <link>${BASE_URL}/${art.slug}/</link>
-      <description>${escapeHtml(art.metaDescription)}</description>
-      <pubDate>Wed, 04 Nov 2026 15:00:00 GMT</pubDate>
-    </item>`).join('\n')}
-  </channel>
-</rss>`;
-
-fs.writeFileSync(path.join(__dirname, 'feed.xml'), feedXml, 'utf8');
-console.log('Updated feed.xml with 12 articles');
-
-// Update each category page with its 3 new articles
-const catSlugs = [
-  'callus-removers-and-tools',
-  'foot-creams-and-lotions',
-  'foot-massagers-and-spas',
-  'orthotics-and-insoles'
-];
-
-catSlugs.forEach(slug => {
-  const catArticles = articles.filter(a => a.categorySlug === slug);
-  const catPagePath = path.join(__dirname, slug, 'index.html');
-  if (!fs.existsSync(catPagePath)) return;
-
-  let catHtml = fs.readFileSync(catPagePath, 'utf8');
+function upgradeRoundup(filePath, tocItems) {
+  let content = fs.readFileSync(filePath, 'utf8');
   
-  const cardsHtml = catArticles.map(a => `
-        <li>
-          <article class="card">
-            <span class="card-pic">
-              <img src="/assets/images/${a.image1.file}" alt="${escapeHtml(a.title)}" width="88" height="88" loading="lazy">
-            </span>
-            <div class="card-body">
-              <span class="tag">${a.categoryName}</span>
-              <h3><a href="/${a.slug}/">${a.title}</a></h3>
-              <p>${a.metaDescription}</p>
-              <time datetime="2026-11-04">Updated November 4, 2026</time>
-            </div>
-          </article>
-        </li>`).join('');
+  // Replace <div class="layout"> with <div class="layout has-toc">
+  // And insert the Left Sticky TOC Column
+  const leftColHtml = `  <div class="layout has-toc">
+    <!-- 1. LEFT STICKY COLUMN: Table of Contents & Amazon Earning Box (Exact seniorlearningnetwork.com Parity) -->
+    <aside class="toc-col">
+      <div class="toc-stick">
+        <nav class="toc-side" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ol>
+${tocItems.map(t => `            <li><a href="${t.href}">${t.label}</a></li>`).join('\n')}
+          </ol>
+        </nav>
+        <aside class="toc-earn" aria-label="Earning information">
+          <p class="toc-earn-title">Earning information</p>
+          <p>As an Amazon Associate, we earn from qualifying purchases, at no extra cost to you.</p>
+        </aside>
+      </div>
+    </aside>
 
-  // Append new cards inside <ul class="cards">
-  catHtml = catHtml.replace('</ul>', `${cardsHtml}\n      </ul>`);
-  fs.writeFileSync(catPagePath, catHtml, 'utf8');
-  console.log(`Updated category page: ${slug}/index.html`);
-});
+    <!-- 2. CENTER MAIN COLUMN: Article Header & Prose -->
+    <div>
+      <article class="article">`;
 
-console.log('All builds completed successfully!');
+  // Replace old starting tag
+  if (content.includes('<div class="layout">\n    <article class="article">') || content.includes('<div class="layout">\r\n    <article class="article">')) {
+    content = content.replace(/<div class="layout">[\r\n\s]*<article class="article">/, leftColHtml);
+  } else if (!content.includes('class="toc-col"')) {
+    content = content.replace('<div class="layout">', leftColHtml);
+  }
+
+  // Close the center column div before right rail
+  if (content.includes('</article>\n\n    <!-- Right Sticky Products Rail') || content.includes('</article>\r\n\r\n    <!-- Right Sticky Products Rail')) {
+    content = content.replace('</article>', '</article>\n    </div>');
+  }
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  console.log('Upgraded roundup guide:', path.basename(path.dirname(filePath)));
+}
+
+// 1. Callus Removers Roundup
+upgradeRoundup(path.join(__dirname, 'best-electric-callus-removers', 'index.html'), [
+  { href: '#quick-verdict', label: 'Our Quick Verdict' },
+  { href: '#comparison-table', label: 'Comparison Table' },
+  { href: '#our-picks', label: 'Picks at a Glance' },
+  { href: '#pick-1-amope-pedi-perfect', label: '1. Amope Pedi Perfect' },
+  { href: '#pick-2-own-harmony-cr900', label: '2. Own Harmony CR900' },
+  { href: '#pick-3-pritech-rechargeable', label: '3. PRITECH Rechargeable' },
+  { href: '#pick-4-care-me-powerful', label: '4. Care me Powerful' },
+  { href: '#pick-5-rikans-waterproof', label: '5. Rikans Waterproof' },
+  { href: '#pick-6-iroha-vacuum-grinder', label: '6. Iroha Vacuum Grinder' },
+  { href: '#pick-7-flawless-pedi', label: '7. Flawless Pedi Tool' },
+  { href: '#pick-8-innobeta-cordless', label: '8. InnoBeta Cordless' }
+]);
+
+// 2. Heel Creams Roundup
+upgradeRoundup(path.join(__dirname, 'best-cracked-heel-creams-with-urea', 'index.html'), [
+  { href: '#quick-verdict', label: 'Our Quick Verdict' },
+  { href: '#comparison-table', label: 'Comparison Table' },
+  { href: '#our-picks', label: 'Picks at a Glance' },
+  { href: '#pick-1-purorganica-urea', label: '1. PurOrganica 40% Urea' },
+  { href: '#pick-2-ebanel-urea', label: '2. Ebanel 40% Urea Plus' },
+  { href: '#pick-3-grocerism-urea', label: '3. Grocerism 40% Intensive' },
+  { href: '#pick-4-udderly-smooth', label: '4. Udderly Smooth 20%' },
+  { href: '#pick-5-flexitol-heel-balm', label: '5. Flexitol Heel Balm' },
+  { href: '#pick-6-okeeffes-healthy-feet', label: "6. O'Keeffe's Healthy Feet" },
+  { href: '#pick-7-cerave-sa-foot-cream', label: '7. CeraVe SA Renewing' }
+]);
+
+// 3. Foot Massagers Roundup
+upgradeRoundup(path.join(__dirname, 'best-heated-foot-massagers-for-plantar-fasciitis', 'index.html'), [
+  { href: '#quick-verdict', label: 'Our Quick Verdict' },
+  { href: '#comparison-table', label: 'Comparison Table' },
+  { href: '#our-picks', label: 'Picks at a Glance' },
+  { href: '#pick-1-miko-shiatsu', label: '1. Miko Shiatsu Machine' },
+  { href: '#pick-2-renpho-heated', label: '2. RENPHO Heated Machine' },
+  { href: '#pick-3-cloud-massage', label: '3. Cloud Massage Foot & Calf' },
+  { href: '#pick-4-nekteck-shiatsu', label: '4. Nekteck Foot Massager' },
+  { href: '#pick-5-medmassager-mmf07', label: '5. MedMassager MMF07' },
+  { href: '#pick-6-belmint-shiatsu', label: '6. Belmint Heated Shiatsu' }
+]);
+
+console.log('All 15 inner pages are now 100% strict Senior Learning Network 3-column architecture!');
