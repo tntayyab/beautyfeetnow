@@ -6,6 +6,7 @@ today = datetime.date.today().isoformat()
 
 pages = [
     ('/', '1.0', 'daily'),
+    ('/page/2/', '0.7', 'weekly'),
     ('/callus-removers-and-tools/', '0.8', 'weekly'),
     ('/foot-creams-and-lotions/', '0.8', 'weekly'),
     ('/foot-massagers-and-spas/', '0.8', 'weekly'),

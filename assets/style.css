@@ -655,3 +655,69 @@ details.toc a:hover {
 .sources-list a:hover {
   color: var(--primary-hover);
 }
+
+
+/* ==========================================================================
+   Pagination Component (Accessible, Clean, Responsive)
+   ========================================================================== */
+.pagination-nav {
+  margin: 36px 0 24px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  flex-wrap: wrap;
+}
+.pagination li {
+  margin: 0 !important;
+  list-style: none !important;
+}
+.pagination a, .pagination span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: var(--btn-radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 0.975rem;
+  text-decoration: none !important;
+  transition: all .15s ease;
+}
+.pagination a:hover {
+  background: var(--accent-soft);
+  color: var(--primary) !important;
+  border-color: var(--primary);
+  text-decoration: none !important;
+  transform: translateY(-1px);
+}
+.pagination .active a, .pagination .active span {
+  background: var(--primary) !important;
+  color: var(--primary-ink) !important;
+  border-color: var(--primary) !important;
+  cursor: default;
+}
+.pagination .disabled span {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background: var(--bg);
+  border-color: var(--line);
+  color: var(--muted);
+}
+@media (max-width: 600px) {
+  .pagination a, .pagination span {
+    min-width: 38px;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 0.875rem;
+  }
+}
