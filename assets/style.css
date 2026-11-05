@@ -648,12 +648,14 @@ details.toc a:hover {
   line-height: 1.5;
 }
 .sources-list a {
-  color: var(--primary);
+  color: #0284C7 !important;
   font-weight: 600;
-  text-decoration: underline !important;
+  text-decoration: none !important;
+  transition: color .15s ease;
 }
 .sources-list a:hover {
-  color: var(--primary-hover);
+  color: #075985 !important;
+  text-decoration: none !important;
 }
 
 
@@ -805,4 +807,148 @@ svg {
   stroke: currentColor !important;
   fill: none !important;
   stroke-width: 2.2 !important;
+}
+
+
+
+/* ==========================================================================
+   Internal & External Link High-Contrast Colors & Hover Darkening
+   Zero Text Decoration Across Entire Site
+   ========================================================================== */
+a, a:hover, a:focus, a:visited, a:active {
+  text-decoration: none !important;
+}
+
+.prose a, .prose a:visited {
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: color .15s ease;
+}
+
+/* Internal Links: Podiatric Deep Emerald/Teal */
+.prose a:not([target="_blank"]):not([href^="http"]),
+.prose a[href^="/"] {
+  color: #0D7A68 !important;
+  text-decoration: none !important;
+}
+.prose a:not([target="_blank"]):not([href^="http"]):hover,
+.prose a[href^="/"]:hover {
+  color: #042F2E !important;
+  text-decoration: none !important;
+}
+
+/* External Authority Links: Authority Medical Blue */
+.prose a[target="_blank"],
+.prose a[href^="http"] {
+  color: #0284C7 !important;
+  text-decoration: none !important;
+}
+.prose a[target="_blank"]:hover,
+.prose a[href^="http"]:hover {
+  color: #075985 !important;
+  text-decoration: none !important;
+}
+
+/* Universal Image Cleanup (Zero Unwanted Decoration) */
+img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.article-figure {
+  border: 1px solid var(--line);
+  box-shadow: none !important;
+}
+
+
+
+/* ==========================================================================
+   Related Clinical Guides (1-Line Leveled 3-Column Grid)
+   ========================================================================== */
+.related {
+  margin: 48px 0 28px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.related h2 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.related-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  align-items: stretch;
+}
+.related-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color .15s, box-shadow .15s, transform .15s;
+}
+.related-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 24px rgba(var(--shadow-rgb), 0.08);
+  transform: translateY(-2px);
+}
+.related-card a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none !important;
+  color: var(--ink);
+}
+.related-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--bg);
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+.related-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: none !important;
+  box-shadow: none !important;
+}
+.related-card-body {
+  padding: 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.related-tag {
+  display: inline-block;
+  font-size: 0.785rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+.related-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color .15s;
+}
+.related-card:hover .related-title {
+  color: var(--primary);
+}
+
+@media (max-width: 820px) {
+  .related-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
 }

@@ -39,21 +39,21 @@ SIDE_RAIL = {
     ]
 }
 
-# Related Guides Pool
+# Related Guides Pool (100% Local High-Res WebP Assets - Never Fails)
 RELATED_POOL = [
-    {'slug': 'best-electric-callus-removers', 'title': '8 Best Electric Callus Removers (2026)', 'tag': 'Callus Removers and Tools', 'img': 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg'},
-    {'slug': 'how-to-use-electric-callus-remover-safely', 'title': 'How to Use an Electric Callus Remover Safely', 'tag': 'Callus Removers and Tools', 'img': '/assets/images/electric-callus-safe-use.webp'},
+    {'slug': 'best-electric-callus-removers', 'title': '8 Best Electric Callus Removers (2026)', 'tag': 'Callus Removers and Tools', 'img': '/assets/images/electric-callus-safe-use.webp'},
+    {'slug': 'how-to-use-electric-callus-remover-safely', 'title': 'How to Use an Electric Callus Remover Safely', 'tag': 'Callus Removers and Tools', 'img': '/assets/images/roller-grit-skin-contact.webp'},
     {'slug': 'nano-glass-foot-file-vs-electric-callus-remover', 'title': 'Nano Glass Foot File vs Electric Callus Remover', 'tag': 'Callus Removers and Tools', 'img': '/assets/images/nano-glass-vs-electric.webp'},
     {'slug': 'why-do-foot-calluses-keep-coming-back', 'title': 'Why Do Foot Calluses Keep Coming Back?', 'tag': 'Callus Removers and Tools', 'img': '/assets/images/callus-causes-gait.webp'},
-    {'slug': 'best-cracked-heel-creams-with-urea', 'title': '8 Best Cracked Heel Creams with Urea (2026)', 'tag': 'Foot Creams and Lotions', 'img': 'https://m.media-amazon.com/images/I/71eXGfLw2sL._AC_SL1500_.jpg'},
+    {'slug': 'best-cracked-heel-creams-with-urea', 'title': '8 Best Cracked Heel Creams with Urea (2026)', 'tag': 'Foot Creams and Lotions', 'img': '/assets/images/cracked-heel-fissures.webp'},
     {'slug': 'urea-cream-20-vs-40-percent-difference', 'title': 'Urea Cream 20% vs 40%: Key Differences', 'tag': 'Foot Creams and Lotions', 'img': '/assets/images/urea-concentration-skin.webp'},
     {'slug': 'how-to-heal-deep-cracked-heels-overnight', 'title': 'How to Heal Deep Cracked Heels Overnight', 'tag': 'Foot Creams and Lotions', 'img': '/assets/images/cracked-heel-recovery.webp'},
     {'slug': 'salicylic-acid-vs-lactic-acid-for-rough-feet', 'title': 'Salicylic Acid vs Lactic Acid for Rough Feet', 'tag': 'Foot Creams and Lotions', 'img': '/assets/images/salicylic-vs-lactic-feet.webp'},
-    {'slug': 'best-heated-foot-massagers-for-plantar-fasciitis', 'title': '7 Best Heated Foot Massagers (2026)', 'tag': 'Foot Massagers and Spas', 'img': 'https://m.media-amazon.com/images/I/71I7cK9y86L._AC_SL1500_.jpg'},
+    {'slug': 'best-heated-foot-massagers-for-plantar-fasciitis', 'title': '7 Best Heated Foot Massagers (2026)', 'tag': 'Foot Massagers and Spas', 'img': '/assets/images/foot-massager-routine.webp'},
     {'slug': 'how-often-should-you-use-a-foot-massager', 'title': 'How Often Should You Use a Foot Massager?', 'tag': 'Foot Massagers and Spas', 'img': '/assets/images/foot-massager-daily-use.webp'},
     {'slug': 'shiatsu-vs-air-compression-foot-massager', 'title': 'Shiatsu vs Air Compression Foot Massagers', 'tag': 'Foot Massagers and Spas', 'img': '/assets/images/shiatsu-vs-air-compression.webp'},
     {'slug': 'why-do-feet-burn-at-night-causes-and-relief', 'title': 'Why Do Feet Burn at Night? Causes & Relief', 'tag': 'Foot Massagers and Spas', 'img': '/assets/images/burning-feet-night-relief.webp'},
-    {'slug': 'best-orthotic-insoles-for-flat-feet', 'title': '9 Best Orthotic Insoles for Flat Feet (2026)', 'tag': 'Orthotics and Insoles', 'img': 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg'},
+    {'slug': 'best-orthotic-insoles-for-flat-feet', 'title': '9 Best Orthotic Insoles for Flat Feet (2026)', 'tag': 'Orthotics and Insoles', 'img': '/assets/images/custom-molded-insoles.webp'},
     {'slug': 'rigid-vs-soft-orthotic-insoles-plantar-fasciitis', 'title': 'Rigid vs Soft Orthotic Insoles for Plantar Fasciitis', 'tag': 'Orthotics and Insoles', 'img': '/assets/images/rigid-vs-soft-orthotics.webp'},
     {'slug': 'how-to-tell-if-you-have-flat-feet-or-high-arches', 'title': 'How to Tell if You Have Flat Feet or High Arches', 'tag': 'Orthotics and Insoles', 'img': '/assets/images/flat-feet-vs-high-arches.webp'},
     {'slug': 'signs-you-need-custom-orthotics-vs-otc-insoles', 'title': 'Signs You Need Custom Orthotics vs OTC Insoles', 'tag': 'Orthotics and Insoles', 'img': '/assets/images/custom-vs-otc-orthotics.webp'}
@@ -236,12 +236,17 @@ def render_article_html(art):
             </div>
           </li>""" for p in side_rail])
 
-    # Related Guides HTML
-    related_guides = [g for g in RELATED_POOL if g['slug'] != art['slug']][:3]
+    # Related Guides HTML (Select 3 related guides, prioritizing same category)
+    same_cat = [g for g in RELATED_POOL if g['tag'] == art['categoryName'] and g['slug'] != art['slug']]
+    diff_cat = [g for g in RELATED_POOL if g['tag'] != art['categoryName'] and g['slug'] != art['slug']]
+    related_guides = (same_cat + diff_cat)[:3]
+
     related_html = "".join([f"""
           <article class="related-card">
             <a href="/{g['slug']}/">
-              <img src="{g['img']}" alt="{g['title']}" width="380" height="220" loading="lazy">
+              <div class="related-card-img-wrap">
+                <img src="{g['img']}" alt="{g['title']}" width="380" height="220" loading="lazy" decoding="async">
+              </div>
               <div class="related-card-body">
                 <span class="related-tag">{g['tag']}</span>
                 <div class="related-title">{g['title']}</div>
