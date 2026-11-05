@@ -3,3 +3,10 @@ node_modules/
 pages_dev_index.html
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc
+test_*.js
+test_*.py
+verify_*.py
+append_*.py
+fix_*.py
