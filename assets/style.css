@@ -285,6 +285,48 @@ th { font-family: var(--font-body); font-weight: 700; background: var(--bg); col
 .guide-note p { margin: 0; }
 
 /* ==========================================================================
+   Senior Learning Network Exact Benchmark Components
+   ========================================================================== */
+
+/* Inline product box (info posts) */
+.pbox { display: grid; gap: 14px; grid-template-columns: 96px minmax(0, 1fr); align-items: center; border: 1px solid var(--line); border-left: 5px solid var(--accent); border-radius: var(--radius); padding: 14px; margin: 1.6em 0; background: var(--bg); }
+.pbox img { width: 96px; height: 96px; object-fit: contain; background: #fff; border-radius: 6px; }
+.pbox .why { margin: 4px 0 10px; font-size: 1.05rem; color: var(--muted); line-height: 1.45; }
+.pbox .btn { min-height: 44px; font-size: 1rem; padding: 0 18px; width: fit-content; text-decoration: none !important; }
+@container (max-width: 439px) { .pbox { grid-template-columns: 72px minmax(0, 1fr); } .pbox img { width: 72px; height: 72px; } }
+
+/* Earning Note */
+.earn-note { margin: 24px 0 0; padding: 16px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); font-size: 0.95rem; line-height: 1.55; color: var(--muted); }
+.earn-note p { margin: 0; }
+.earn-note strong { color: var(--ink); }
+
+/* Related guides: an even grid of compact cards (photo, category, title) */
+.related { margin-top: 40px; container-type: inline-size; }
+.related h2 { margin: 0 0 16px; font-size: 1.35rem; }
+.rel-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; grid-template-columns: 1fr; }
+@container (min-width: 620px) { .rel-list { grid-template-columns: 1fr 1fr; } }
+.rel-list li { margin: 0; }
+.rel-item { display: flex; align-items: center; gap: 14px; height: 100%; min-height: 110px; padding: 12px 16px 12px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); color: var(--ink); text-decoration: none !important; transition: border-color .15s, box-shadow .15s; }
+.rel-item:hover, .rel-item:focus-visible { border-color: var(--primary); box-shadow: 0 4px 14px rgba(var(--shadow-rgb), .08); }
+.rel-item:hover .rel-title { color: var(--primary); text-decoration: none !important; }
+.rel-pic { flex: none; width: 88px; height: 88px; display: grid; place-items: center; background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.rel-pic img { width: 80px; height: 80px; object-fit: contain; }
+.rel-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.rel-tag { font-size: .85rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.03em; }
+.rel-title { font: 700 1.05rem/1.3 var(--font-head); color: var(--ink); margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Senior Learning Network Footer */
+.site-footer { background: var(--primary); color: var(--footer-ink); padding: 40px 0 32px; font-size: 1rem; margin-top: 48px; }
+.site-footer a { color: var(--primary-ink); text-decoration: none !important; }
+.site-footer .brand { font: 700 1.35rem/1.2 var(--font-head); color: var(--primary-ink); margin-bottom: 10px; }
+.site-footer .links { display: flex; flex-wrap: wrap; gap: 6px 20px; list-style: none; margin: 0 0 14px; padding: 0; }
+.site-footer .links li { margin: 0; }
+.site-footer .links a { display: inline-flex; align-items: center; min-height: 40px; color: var(--primary-ink); }
+.site-footer .links.cats { font-weight: 700; padding-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+.site-footer .disclaimer { font-size: .875rem; line-height: 1.6; color: rgba(255, 255, 255, 0.8); margin-top: 16px; margin-bottom: 8px; }
+
+
+/* ==========================================================================
    KYROS Compliant 3-Column Footer
    ========================================================================== */
 .site-footer { background: var(--primary); color: var(--footer-ink); padding: 48px 0 36px; font-size: 1.025rem; margin-top: 40px; }

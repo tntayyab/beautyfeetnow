@@ -18,28 +18,35 @@ function escapeHtml(str) {
 
 const sideRailData = {
   'callus-removers-and-tools': [
-    { rank: 1, name: 'Amope Pedi Perfect Wet & Dry', score: '9.8', img: 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg', asin: 'B018EN59VC' },
-    { rank: 2, name: 'Own Harmony CR900 High-Torque', score: '9.6', img: 'https://m.media-amazon.com/images/I/71Xm06O6nOL._AC_SL1500_.jpg', asin: 'B00V498L3U' },
-    { rank: 3, name: 'PRITECH 3-Roller Rechargeable', score: '9.4', img: 'https://m.media-amazon.com/images/I/71m4+K8pC2L._AC_SL1500_.jpg', asin: 'B07DN9B4P5' }
+    { rank: 1, name: 'Amope Pedi Perfect Wet & Dry', score: '9.8', img: 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg', asin: 'B018EN59VC', why: 'Dual-speed IPX7 waterproof roller that safely exfoliates hardened stratum corneum without friction burns.' },
+    { rank: 2, name: 'Own Harmony CR900 High-Torque', score: '9.6', img: 'https://m.media-amazon.com/images/I/71Xm06O6nOL._AC_SL1500_.jpg', asin: 'B00V498L3U', why: 'High-torque 2,000 RPM motor with pressure-lock sensor to prevent stalling against stubborn heel plaques.' },
+    { rank: 3, name: 'PRITECH 3-Roller Rechargeable', score: '9.4', img: 'https://m.media-amazon.com/images/I/71m4+K8pC2L._AC_SL1500_.jpg', asin: 'B07DN9B4P5', why: 'Three interchangeable mineral quartz grits and integrated LED battery readout for safe home maintenance.' }
   ],
   'foot-creams-and-lotions': [
-    { rank: 1, name: 'PurOrganica 40% Urea Foot Cream', score: '9.8', img: 'https://m.media-amazon.com/images/I/71eXGfLw2sL._AC_SL1500_.jpg', asin: 'B07N18L77P' },
-    { rank: 2, name: 'Ebanel 40% Urea Plus Salicylic', score: '9.7', img: 'https://m.media-amazon.com/images/I/71C7kH9F8dL._AC_SL1500_.jpg', asin: 'B075487B2S' },
-    { rank: 3, name: 'Grocerism 40% Intensive Tub', score: '9.5', img: 'https://m.media-amazon.com/images/I/61M0z5gD+6L._AC_SL1500_.jpg', asin: 'B085CD9R9C' }
+    { rank: 1, name: 'PurOrganica 40% Urea Foot Cream', score: '9.8', img: 'https://m.media-amazon.com/images/I/71eXGfLw2sL._AC_SL1500_.jpg', asin: 'B07N18L77P', why: 'High-potency keratolytic formula enriched with tea tree oil and aloe vera to dissolve deep heel fissures within 7 days.' },
+    { rank: 2, name: 'Ebanel 40% Urea Plus Salicylic', score: '9.7', img: 'https://m.media-amazon.com/images/I/71C7kH9F8dL._AC_SL1500_.jpg', asin: 'B075487B2S', why: 'Dual-action 2% salicylic acid and 40% urea blend that provides intensive desquamation and lipid replenishment.' },
+    { rank: 3, name: 'Grocerism 40% Intensive Tub', score: '9.5', img: 'https://m.media-amazon.com/images/I/61M0z5gD+6L._AC_SL1500_.jpg', asin: 'B085CD9R9C', why: 'Rich emollient barrier salve designed for overnight occlusion therapy under breathable cotton socks.' }
   ],
   'foot-massagers-and-spas': [
-    { rank: 1, name: 'Miko Shiatsu Foot Massager', score: '9.8', img: 'https://m.media-amazon.com/images/I/71I7cK9y86L._AC_SL1500_.jpg', asin: 'B0797G8736' },
-    { rank: 2, name: 'RENPHO Heated Air Compression', score: '9.6', img: 'https://m.media-amazon.com/images/I/71D0g8mN96L._AC_SL1500_.jpg', asin: 'B07F2H1NQR' },
-    { rank: 3, name: 'Cloud Massage Foot & Calf', score: '9.5', img: 'https://m.media-amazon.com/images/I/71eXwQv47UL._AC_SL1500_.jpg', asin: 'B01FHOHVDC' }
+    { rank: 1, name: 'Miko Shiatsu Foot Massager', score: '9.8', img: 'https://m.media-amazon.com/images/I/71I7cK9y86L._AC_SL1500_.jpg', asin: 'B0797G8736', why: 'Deep-kneading rotational nodes with targeted plantar fascia arch stretch and gentle infrared heat therapy.' },
+    { rank: 2, name: 'RENPHO Heated Air Compression', score: '9.6', img: 'https://m.media-amazon.com/images/I/71D0g8mN96L._AC_SL1500_.jpg', asin: 'B07F2H1NQR', why: 'Multi-chamber dynamic pneumatic compression that enhances venous return and accelerates tendon recovery.' },
+    { rank: 3, name: 'Cloud Massage Foot & Calf', score: '9.5', img: 'https://m.media-amazon.com/images/I/71eXwQv47UL._AC_SL1500_.jpg', asin: 'B01FHOHVDC', why: 'Adjustable 360-degree comfort bar allowing combined therapeutic stimulation of the Achilles tendon and calf.' }
   ],
   'orthotics-and-insoles': [
-    { rank: 1, name: 'Superfeet Green High Arch Insole', score: '9.8', img: 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg', asin: 'B000XY5Q6C' },
-    { rank: 2, name: 'Powerstep Pinnacle Orthotic', score: '9.7', img: 'https://m.media-amazon.com/images/I/71N7j2-wJzL._AC_SL1500_.jpg', asin: 'B000KGOHCS' },
-    { rank: 3, name: 'WalkHero Plantar Fasciitis Insole', score: '9.4', img: 'https://m.media-amazon.com/images/I/71x4xNl97CL._AC_SL1500_.jpg', asin: 'B075YB2J6Q' }
+    { rank: 1, name: 'Superfeet Green High Arch Insole', score: '9.8', img: 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg', asin: 'B000XY5Q6C', why: 'Deep biomechanical heel cup and high-density foam stabilizer that neutralizes overpronation and heel strike shock.' },
+    { rank: 2, name: 'Powerstep Pinnacle Orthotic', score: '9.7', img: 'https://m.media-amazon.com/images/I/71N7j2-wJzL._AC_SL1500_.jpg', asin: 'B000KGOHCS', why: 'Dual-layer EVA cushioning with semi-rigid arch cradle clinically proven to relieve acute plantar fasciitis pain.' },
+    { rank: 3, name: 'WalkHero Plantar Fasciitis Insole', score: '9.4', img: 'https://m.media-amazon.com/images/I/71x4xNl97CL._AC_SL1500_.jpg', asin: 'B075YB2J6Q', why: 'Accessible medical-grade anatomical support with silicone metatarsal pads for everyday walking and work boots.' }
   ]
 };
 
-console.log('Generating 12 Master Articles with Exact Senior Learning Network 3-Column Engine...');
+const categoryRoundup = {
+  'callus-removers-and-tools': { slug: 'best-electric-callus-removers', title: '8 Best Electric Callus Removers for Smooth Feet (2026)', img: 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg' },
+  'foot-creams-and-lotions': { slug: 'best-cracked-heel-creams-with-urea', title: '8 Best Cracked Heel Creams with Urea (2026)', img: 'https://m.media-amazon.com/images/I/71eXGfLw2sL._AC_SL1500_.jpg' },
+  'foot-massagers-and-spas': { slug: 'best-heated-foot-massagers-for-plantar-fasciitis', title: '7 Best Heated Foot Massagers for Plantar Fasciitis (2026)', img: 'https://m.media-amazon.com/images/I/71I7cK9y86L._AC_SL1500_.jpg' },
+  'orthotics-and-insoles': { slug: 'best-electric-callus-removers', title: '8 Best Electric Callus Removers for Smooth Feet (2026)', img: 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg' }
+};
+
+console.log('Generating 12 Master Articles with 100% Strict Senior Learning Network Engine...');
 
 articles.forEach(art => {
   const jsonPath = path.join(__dirname, 'src', 'content', 'articles', `${art.slug}.json`);
@@ -50,6 +57,29 @@ articles.forEach(art => {
   ensureDir(pageDir);
 
   const sideRail = sideRailData[art.categorySlug] || sideRailData['callus-removers-and-tools'];
+  const topProduct = sideRail[0];
+
+  // Build related guides (4 items: roundup + other articles in category or adjacent)
+  const categoryArticles = articles.filter(a => a.categorySlug === art.categorySlug && a.slug !== art.slug);
+  const otherArticles = articles.filter(a => a.categorySlug !== art.categorySlug);
+  const candidatePool = [
+    categoryRoundup[art.categorySlug],
+    ...categoryArticles.map(a => ({ slug: a.slug, title: a.title, categoryName: a.categoryName, img: `/assets/images/${a.image1.file}` })),
+    ...otherArticles.map(a => ({ slug: a.slug, title: a.title, categoryName: a.categoryName, img: `/assets/images/${a.image1.file}` }))
+  ];
+
+  const related4 = candidatePool.slice(0, 4);
+
+  const relatedGuidesHtml = related4.map(r => `
+          <li>
+            <a class="rel-item" href="/${r.slug}/">
+              <span class="rel-pic"><img src="${r.img}" alt="${r.title}" width="88" height="88" loading="lazy" decoding="async"></span>
+              <span class="rel-text">
+                <span class="rel-tag">${r.categoryName || art.categoryName}</span>
+                <span class="rel-title">${r.title}</span>
+              </span>
+            </a>
+          </li>`).join('');
 
   // Schema blocks
   const faqSchema = {
@@ -72,9 +102,8 @@ articles.forEach(art => {
     "dateModified": art.date,
     "inLanguage": "en-US",
     "author": {
-      "@type": "Person",
-      "name": "Elena Rostova",
-      "jobTitle": "Podiatric Dermatology & Lower Extremity Biomechanics Specialist",
+      "@type": "Organization",
+      "name": "Beauty Feet Now team",
       "url": `${BASE_URL}/about-us/`
     },
     "publisher": {
@@ -104,17 +133,17 @@ articles.forEach(art => {
   const tableRowsHtml = art.table.rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('');
 
   const faqsHtml = art.faqs.map(f => `
-        <details>
-          <summary>${f.q}</summary>
-          <div><p>${f.a}</p></div>
-        </details>`).join('');
+            <details>
+              <summary>${f.q}</summary>
+              <div><p>${f.a}</p></div>
+            </details>`).join('');
 
   const takeawaysHtml = art.takeaways.map(t => `<li>${t}</li>`).join('');
 
   const sideRailHtml = sideRail.map(p => `
           <li class="rail-row">
             <span class="rail-rank">${p.rank}</span>
-            <img src="${p.img}" alt="${p.name}" width="64" height="64" loading="lazy">
+            <img src="${p.img}" alt="${p.name}" width="64" height="64" loading="lazy" decoding="async">
             <div class="rail-body">
               <a class="rail-name" href="https://www.amazon.com/dp/${p.asin}?tag=beautyfeetnow-20" target="_blank" rel="nofollow">${p.name}</a>
               <div class="rail-meta">
@@ -170,9 +199,9 @@ ${JSON.stringify(faqSchema, null, 2)}
     </a>
     <nav class="nav" aria-label="Main">
       <a href="/callus-removers-and-tools/" ${art.categorySlug === 'callus-removers-and-tools' ? 'aria-current="page"' : ''}>Callus Removers</a>
-      <a href="/foot-creams-and-lotions/" ${art.categorySlug === 'foot-creams-and-lotions' ? 'aria-current="page"' : ''}>Creams & Lotions</a>
-      <a href="/foot-massagers-and-spas/" ${art.categorySlug === 'foot-massagers-and-spas' ? 'aria-current="page"' : ''}>Massagers & Spas</a>
-      <a href="/orthotics-and-insoles/" ${art.categorySlug === 'orthotics-and-insoles' ? 'aria-current="page"' : ''}>Orthotics & Insoles</a>
+      <a href="/foot-creams-and-lotions/" ${art.categorySlug === 'foot-creams-and-lotions' ? 'aria-current="page"' : ''}>Creams &amp; Lotions</a>
+      <a href="/foot-massagers-and-spas/" ${art.categorySlug === 'foot-massagers-and-spas' ? 'aria-current="page"' : ''}>Massagers &amp; Spas</a>
+      <a href="/orthotics-and-insoles/" ${art.categorySlug === 'orthotics-and-insoles' ? 'aria-current="page"' : ''}>Orthotics &amp; Insoles</a>
       <a href="/how-we-test/">How We Test</a>
     </nav>
     <details class="menu">
@@ -183,9 +212,9 @@ ${JSON.stringify(faqSchema, null, 2)}
       </summary>
       <nav aria-label="Main menu">
         <a href="/callus-removers-and-tools/">Callus Removers</a>
-        <a href="/foot-creams-and-lotions/">Creams & Lotions</a>
-        <a href="/foot-massagers-and-spas/">Massagers & Spas</a>
-        <a href="/orthotics-and-insoles/">Orthotics & Insoles</a>
+        <a href="/foot-creams-and-lotions/">Creams &amp; Lotions</a>
+        <a href="/foot-massagers-and-spas/">Massagers &amp; Spas</a>
+        <a href="/orthotics-and-insoles/">Orthotics &amp; Insoles</a>
         <a href="/how-we-test/">How We Test</a>
       </nav>
     </details>
@@ -193,7 +222,7 @@ ${JSON.stringify(faqSchema, null, 2)}
 </header>
 
 <main id="main" class="wrap">
-  <nav class="crumbs" aria-label="Breadcrumb">
+  <nav class="crumbs sr-only" aria-label="Breadcrumb">
     <ol>
       <li><a href="/">Home</a></li>
       <li><a href="/${art.categorySlug}/">${art.categoryName}</a></li>
@@ -225,28 +254,30 @@ ${JSON.stringify(faqSchema, null, 2)}
     <!-- 2. CENTER MAIN COLUMN: Article Header & Prose -->
     <div>
       <article class="article">
+        <span class="kicker">${art.categoryName}</span>
+        <h1>${art.title}</h1>
+        
+        <p class="meta">Updated on <time datetime="${art.date}">${art.formattedDate}</time> · By the <a href="/about-us/">Beauty Feet Now team</a></p>
+
         <div class="prose">
-          <span class="kicker">${art.categoryName}</span>
-          <h1>${art.title}</h1>
-          
-          <div class="meta">
-            <span>By <strong>Elena Rostova</strong> (Podiatry Specialist)</span>
-            <span>•</span>
-            <time datetime="${art.date}">${art.formattedDate}</time>
-            <span>•</span>
-            <span>${art.readTime}</span>
-          </div>
-
-          <!-- STRICT NO INTRO IMAGE: Begins directly with Direct Answer Box -->
+          <!-- STRICT NO INTRO IMAGE: Direct Answer Box -->
           <div class="answer">
-            <div class="answer-label">
-              <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              Direct Answer &amp; Medical Summary
-            </div>
-            <p class="answer-lead">${art.directAnswer}</p>
+            <p class="answer-text"><strong>Direct Answer &amp; Medical Summary:</strong> ${art.directAnswer}</p>
           </div>
 
-          <!-- KEY TAKEAWAYS BOX: Exactly 5 checkmark bullets -->
+          <!-- INLINE TABLE OF CONTENTS (Mobile fallback) -->
+          <details class="toc toc-inline">
+            <summary>On this page <span class="count">(5 sections)</span></summary>
+            <ol>
+              <li><a href="#clinical-mechanism">1. Biological Mechanism &amp; Tissue Dynamics</a></li>
+              <li><a href="#testing-benchmarks">2. Laboratory Benchmarks &amp; Parameter Matrix</a></li>
+              <li><a href="#procedural-workflow">3. Clinical Treatment Protocol &amp; Decisions</a></li>
+              <li><a href="#video-demonstration">4. Expert Video Demonstration</a></li>
+              <li><a href="#frequently-asked-questions">5. Frequently Asked Questions (FAQ)</a></li>
+            </ol>
+          </details>
+
+          <!-- KEY TAKEAWAYS BOX -->
           <div class="takeaways">
             <div class="takeaways-head">
               <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -256,18 +287,6 @@ ${JSON.stringify(faqSchema, null, 2)}
               ${takeawaysHtml}
             </ul>
           </div>
-
-          <!-- INLINE TABLE OF CONTENTS (Mobile fallback) -->
-          <details class="toc-inline" open>
-            <summary>Table of Contents</summary>
-            <ol>
-              <li><a href="#clinical-mechanism">1. Biological Mechanism &amp; Tissue Dynamics</a></li>
-              <li><a href="#testing-benchmarks">2. Laboratory Benchmarks &amp; Parameter Matrix</a></li>
-              <li><a href="#procedural-workflow">3. Clinical Treatment Protocol &amp; Decisions</a></li>
-              <li><a href="#video-demonstration">4. Expert Video Demonstration</a></li>
-              <li><a href="#frequently-asked-questions">5. Frequently Asked Questions (FAQ)</a></li>
-            </ol>
-          </details>
 
           <h2 id="clinical-mechanism">1. Biological Mechanism &amp; Tissue Dynamics</h2>
           <p>The human foot bears up to 1.5 times body weight during normal walking and up to 3 times body weight during running. The epidermal stratum corneum on the soles of our feet contains up to 50 compacted layers of dead, anucleate corneocyte cells bound by specialized lipid envelopes (ceramides, cholesterol, and free fatty acids).</p>
@@ -302,6 +321,16 @@ ${JSON.stringify(faqSchema, null, 2)}
             </table>
           </div>
 
+          <!-- INLINE PRODUCT RECOMMENDATION BOX (Exact SLN .pbox) -->
+          <aside class="pbox">
+            <img src="${topProduct.img}" alt="${topProduct.name}" width="96" height="96" loading="lazy" decoding="async">
+            <div>
+              <strong>${topProduct.name}</strong>
+              <p class="why">${topProduct.why}</p>
+              <a class="btn" href="https://www.amazon.com/dp/${topProduct.asin}?tag=beautyfeetnow-20" rel="nofollow" target="_blank">See it on Amazon</a>
+            </div>
+          </aside>
+
           <!-- RICH MEDIA 3: WebP Image 2 -->
           <figure class="article-figure">
             <img src="/assets/images/${art.image2.file}" alt="${art.image2.alt}" width="800" height="533" loading="lazy">
@@ -327,17 +356,30 @@ ${JSON.stringify(faqSchema, null, 2)}
             <iframe src="https://www.youtube-nocookie.com/embed/${art.videoId}" title="${escapeHtml(art.videoTitle)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
           </div>
 
-          <h2 id="frequently-asked-questions">5. Frequently Asked Questions (FAQ)</h2>
-          <div class="faq">
+          <section class="faq">
+            <h2 id="frequently-asked-questions">Frequently asked questions</h2>
             ${faqsHtml}
-          </div>
+          </section>
 
-          <div class="guide-note">
-            <p><strong>Medical Transparency:</strong> Written and reviewed by Elena Rostova, Podiatric Dermatology &amp; Biomechanics Specialist. All evaluations adhere to strict non-destructive testing protocols. If you experience bleeding, severe diabetes complications, or numbness, consult a physician immediately.</p>
-          </div>
+          <aside class="guide-note">
+            <p><strong>About this guide:</strong> Our evaluation of ${art.title} draws on podiatric specifications, clinical trials, and non-destructive laboratory testing. See <a href="/how-we-test/">how we test</a>.</p>
+          </aside>
 
         </div>
       </article>
+
+      <!-- Bottom Earning Note (Senior Learning Network exact format) -->
+      <aside class="earn-note" aria-label="Earning information">
+        <p><strong>Earning information:</strong> Beauty Feet Now is a participant in the Amazon Services LLC Associates Program. As an Amazon Associate, we earn from qualifying purchases, at no extra cost to you. <a href="/affiliate-disclosure/">Read our disclosure</a>.</p>
+      </aside>
+
+      <!-- Related Guides (Senior Learning Network exact format) -->
+      <section class="related" aria-labelledby="related-guides">
+        <h2 id="related-guides">Related guides</h2>
+        <ul class="rel-list">
+          ${relatedGuidesHtml}
+        </ul>
+      </section>
     </div>
 
     <!-- 3. RIGHT STICKY COLUMN: Products in this guide (Sticky Amazon Rail) -->
@@ -364,37 +406,25 @@ ${JSON.stringify(faqSchema, null, 2)}
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h3>Beauty Feet Now</h3>
-        <p>Your premier independent guide to foot wellness, pedicure tools, and therapeutic relief. We evaluate podiatry aids, electric files, and dermatological creams to help you achieve salon-smooth, pain-free feet from home.</p>
-        <p><strong>Contact:</strong> contact@beautyfeetnow.com</p>
-      </div>
-      <div class="footer-col">
-        <h3>Top Categories</h3>
-        <ul>
-          <li><a href="/callus-removers-and-tools/">Callus Removers &amp; Files</a></li>
-          <li><a href="/foot-creams-and-lotions/">Foot Creams &amp; Salves</a></li>
-          <li><a href="/foot-massagers-and-spas/">Foot Massagers &amp; Spas</a></li>
-          <li><a href="/orthotics-and-insoles/">Orthotics &amp; Insoles</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Editorial &amp; Legal</h3>
-        <ul>
-          <li><a href="/about-us/">About Us</a></li>
-          <li><a href="/how-we-test/">How We Test &amp; Review</a></li>
-          <li><a href="/contact-us/">Contact Us</a></li>
-          <li><a href="/privacy-policy/">Privacy Policy</a></li>
-          <li><a href="/terms-of-service/">Terms of Service</a></li>
-          <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p class="disclaimer"><strong>Affiliate Disclaimer:</strong> Beauty Feet Now is a participant in the Amazon Services LLC Associates Program and other affiliate advertising programs designed to provide a means for sites to earn advertising fees by linking to Amazon.com. If you purchase through our links, we may earn a modest commission at zero additional cost to you.</p>
-      <p>© 2026 Beauty Feet Now. All rights reserved. Content is for informational purposes and not medical advice.</p>
-    </div>
+    <div class="brand">Beauty Feet Now</div>
+    <p>Compare electric callus removers, cracked heel balms, heated foot massagers, and orthotic insoles by efficacy, skin safety, and real clinical results.</p>
+    <ul class="links cats" aria-label="Guides">
+      <li><a href="/callus-removers-and-tools/">Callus Removers</a></li>
+      <li><a href="/foot-creams-and-lotions/">Creams &amp; Lotions</a></li>
+      <li><a href="/foot-massagers-and-spas/">Massagers &amp; Spas</a></li>
+      <li><a href="/orthotics-and-insoles/">Orthotics &amp; Insoles</a></li>
+    </ul>
+    <ul class="links">
+      <li><a href="/about-us/">About Us</a></li>
+      <li><a href="/how-we-test/">How We Test</a></li>
+      <li><a href="/contact-us/">Contact Us</a></li>
+      <li><a href="/privacy-policy/">Privacy Policy</a></li>
+      <li><a href="/terms-of-service/">Terms of Service</a></li>
+      <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+      <li><a href="/sitemap.xml">Sitemap</a></li>
+    </ul>
+    <p class="disclaimer">Beauty Feet Now is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. Additionally, we may participate in other affiliate programs and may be compensated for referring traffic and business to these companies at no cost to you.</p>
+    <p>© 2026 Beauty Feet Now. All rights reserved.</p>
   </div>
 </footer>
 
@@ -402,96 +432,7 @@ ${JSON.stringify(faqSchema, null, 2)}
 </html>`;
 
   fs.writeFileSync(path.join(pageDir, 'index.html'), html, 'utf8');
+  console.log(`✓ Built 100% Strict SLN Article: /${art.slug}/`);
 });
 
-console.log('Successfully generated all 12 Master Articles with SLN 3-Column layout!');
-
-// =========================================================================
-// 2. UPGRADE 3 ROUNDUP GUIDES TO STRICT 3-COLUMN SLN LAYOUT
-// =========================================================================
-
-function upgradeRoundup(filePath, tocItems) {
-  let content = fs.readFileSync(filePath, 'utf8');
-  
-  // Replace <div class="layout"> with <div class="layout has-toc">
-  // And insert the Left Sticky TOC Column
-  const leftColHtml = `  <div class="layout has-toc">
-    <!-- 1. LEFT STICKY COLUMN: Table of Contents & Amazon Earning Box (Exact seniorlearningnetwork.com Parity) -->
-    <aside class="toc-col">
-      <div class="toc-stick">
-        <nav class="toc-side" aria-label="On this page">
-          <p class="toc-title">On this page</p>
-          <ol>
-${tocItems.map(t => `            <li><a href="${t.href}">${t.label}</a></li>`).join('\n')}
-          </ol>
-        </nav>
-        <aside class="toc-earn" aria-label="Earning information">
-          <p class="toc-earn-title">Earning information</p>
-          <p>As an Amazon Associate, we earn from qualifying purchases, at no extra cost to you.</p>
-        </aside>
-      </div>
-    </aside>
-
-    <!-- 2. CENTER MAIN COLUMN: Article Header & Prose -->
-    <div>
-      <article class="article">`;
-
-  // Replace old starting tag
-  if (content.includes('<div class="layout">\n    <article class="article">') || content.includes('<div class="layout">\r\n    <article class="article">')) {
-    content = content.replace(/<div class="layout">[\r\n\s]*<article class="article">/, leftColHtml);
-  } else if (!content.includes('class="toc-col"')) {
-    content = content.replace('<div class="layout">', leftColHtml);
-  }
-
-  // Close the center column div before right rail
-  if (content.includes('</article>\n\n    <!-- Right Sticky Products Rail') || content.includes('</article>\r\n\r\n    <!-- Right Sticky Products Rail')) {
-    content = content.replace('</article>', '</article>\n    </div>');
-  }
-
-  fs.writeFileSync(filePath, content, 'utf8');
-  console.log('Upgraded roundup guide:', path.basename(path.dirname(filePath)));
-}
-
-// 1. Callus Removers Roundup
-upgradeRoundup(path.join(__dirname, 'best-electric-callus-removers', 'index.html'), [
-  { href: '#quick-verdict', label: 'Our Quick Verdict' },
-  { href: '#comparison-table', label: 'Comparison Table' },
-  { href: '#our-picks', label: 'Picks at a Glance' },
-  { href: '#pick-1-amope-pedi-perfect', label: '1. Amope Pedi Perfect' },
-  { href: '#pick-2-own-harmony-cr900', label: '2. Own Harmony CR900' },
-  { href: '#pick-3-pritech-rechargeable', label: '3. PRITECH Rechargeable' },
-  { href: '#pick-4-care-me-powerful', label: '4. Care me Powerful' },
-  { href: '#pick-5-rikans-waterproof', label: '5. Rikans Waterproof' },
-  { href: '#pick-6-iroha-vacuum-grinder', label: '6. Iroha Vacuum Grinder' },
-  { href: '#pick-7-flawless-pedi', label: '7. Flawless Pedi Tool' },
-  { href: '#pick-8-innobeta-cordless', label: '8. InnoBeta Cordless' }
-]);
-
-// 2. Heel Creams Roundup
-upgradeRoundup(path.join(__dirname, 'best-cracked-heel-creams-with-urea', 'index.html'), [
-  { href: '#quick-verdict', label: 'Our Quick Verdict' },
-  { href: '#comparison-table', label: 'Comparison Table' },
-  { href: '#our-picks', label: 'Picks at a Glance' },
-  { href: '#pick-1-purorganica-urea', label: '1. PurOrganica 40% Urea' },
-  { href: '#pick-2-ebanel-urea', label: '2. Ebanel 40% Urea Plus' },
-  { href: '#pick-3-grocerism-urea', label: '3. Grocerism 40% Intensive' },
-  { href: '#pick-4-udderly-smooth', label: '4. Udderly Smooth 20%' },
-  { href: '#pick-5-flexitol-heel-balm', label: '5. Flexitol Heel Balm' },
-  { href: '#pick-6-okeeffes-healthy-feet', label: "6. O'Keeffe's Healthy Feet" },
-  { href: '#pick-7-cerave-sa-foot-cream', label: '7. CeraVe SA Renewing' }
-]);
-
-// 3. Foot Massagers Roundup
-upgradeRoundup(path.join(__dirname, 'best-heated-foot-massagers-for-plantar-fasciitis', 'index.html'), [
-  { href: '#quick-verdict', label: 'Our Quick Verdict' },
-  { href: '#comparison-table', label: 'Comparison Table' },
-  { href: '#our-picks', label: 'Picks at a Glance' },
-  { href: '#pick-1-miko-shiatsu', label: '1. Miko Shiatsu Machine' },
-  { href: '#pick-2-renpho-heated', label: '2. RENPHO Heated Machine' },
-  { href: '#pick-3-cloud-massage', label: '3. Cloud Massage Foot & Calf' },
-  { href: '#pick-4-nekteck-shiatsu', label: '4. Nekteck Foot Massager' },
-  { href: '#pick-5-medmassager-mmf07', label: '5. MedMassager MMF07' },
-  { href: '#pick-6-belmint-shiatsu', label: '6. Belmint Heated Shiatsu' }
-]);
-
-console.log('All 15 inner pages are now 100% strict Senior Learning Network 3-column architecture!');
+console.log('\nAll 12 Master Articles generated with 100% Strict Senior Learning Network Parity!');
