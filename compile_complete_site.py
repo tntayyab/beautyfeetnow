@@ -212,7 +212,7 @@ def render_article_html(art):
     # FAQs HTML
     faqs_html = "".join([f"""
             <details>
-              <summary>{f['q']}</summary>
+              <summary><h4>{f['q']}</h4></summary>
               <div><p>{f['a']}</p></div>
             </details>""" for f in art['faqs']])
             

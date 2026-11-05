@@ -386,9 +386,37 @@ a.rail-name:hover {
 }
 
 /* FAQ Details/Summary (Native HTML, Zero JS) */
-.faq details { border: 1px solid var(--line); border-radius: var(--radius); margin: 0 0 12px; background: var(--surface); }
-.faq summary { cursor: pointer; font-weight: 700; padding: 14px 18px; min-height: 48px; list-style-position: outside; }
-.faq details > div { padding: 0 18px 14px; }
+/* FAQ Details/Summary (Native HTML, Zero JS) */
+.faq details, .faq-list details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin: 0 0 12px;
+  background: var(--surface);
+}
+.faq summary, .faq-list summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 14px 18px;
+  min-height: 48px;
+  list-style-position: outside;
+  transition: color .15s ease;
+}
+.faq summary h4, .faq-list summary h4, details summary h4 {
+  display: inline;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  line-height: inherit;
+  transition: color .15s ease;
+}
+.faq summary:hover h4, .faq-list summary:hover h4, details summary:hover h4 {
+  color: var(--primary);
+}
+.faq details > div, .faq-list details > div {
+  padding: 0 18px 14px;
+}
 
 /* Guide Note at bottom */
 .guide-note { margin: 2em 0 0; padding: 16px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); font-size: 1.025rem; }
