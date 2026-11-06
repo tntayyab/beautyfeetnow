@@ -1101,3 +1101,118 @@ img {
   border-color: #0284c7 !important;
   color: #0284c7 !important;
 }
+
+
+/* ==========================================================================
+   BULLETPROOF SVG ICON CONSTRAINTS (Zero Black Circle Explosion)
+   ========================================================================== */
+.takeaways-head svg,
+.takeaways-box svg,
+.callout-box svg,
+.takeaway-list svg,
+.takeaways svg {
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
+  fill: none !important;
+  stroke: var(--primary, #0D7A68) !important;
+  stroke-width: 2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+}
+
+.trust-icon,
+.trust-item svg {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  max-width: 32px !important;
+  max-height: 32px !important;
+  flex: none !important;
+  stroke: var(--primary, #0D7A68) !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  display: inline-block !important;
+}
+
+.cat-card .cat-icon svg {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  flex: none !important;
+  stroke: var(--primary, #0D7A68) !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  display: inline-block !important;
+}
+
+.answer-label svg {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  max-width: 20px !important;
+  stroke: var(--primary, #0D7A68) !important;
+  fill: none !important;
+  stroke-width: 2 !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+}
+
+/* ==========================================================================
+   BALANCED HEADER NAVIGATION ALIGNMENT & SPACING
+   ========================================================================== */
+header .header-container,
+.site-header .wrap {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 1rem 1.5rem !important;
+}
+
+header nav ul,
+.site-header .nav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.75rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+@media (max-width: 767px) {
+  .site-header .nav {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 1.25rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    flex-direction: column !important;
+    gap: 1rem !important;
+    z-index: 999;
+  }
+  .site-header .nav.nav-open {
+    display: flex !important;
+  }
+}
+
+/* Authentic Packshot Display */
+.callout-box img,
+.product-card .product-img-wrap img {
+  background: #ffffff !important;
+  object-fit: contain !important;
+}

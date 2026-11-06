@@ -37,7 +37,7 @@ DATA = {
             "rank": 1,
             "name": "PurOrganica 40% Urea Foot Cream with Tea Tree Oil",
             "tagline": "Best Overall Cracked Heel Cream for Rapid Fissure Closure",
-            "asin": "B07N18L77P",
+            "asin": "B0886DBQCV",
             "score": "9.8",
             "specs": [("Active Keratolytic", "40% Medical-Grade Urea (Carbamide)"), ("Botanical Synergists", "Tea Tree Oil, Aloe Vera, Camellia"), ("Emollient Base", "Glycerin & Hyaluronic Acid"), ("Net Content", "4.0 Fl. Oz (120 ml) Tub")],
             "why": "Combines maximum-strength 40% keratolytic urea with natural antimicrobial tea tree oil, rapidly closing painful heel fissures while neutralizing odor and microbial risks.",
@@ -49,7 +49,7 @@ DATA = {
             "rank": 2,
             "name": "Ebanel 40% Urea Cream Plus 2% Salicylic Acid",
             "tagline": "Best Dual-Action Exfoliant for Thick, Stubborn Heel Calluses",
-            "asin": "B075487B2S",
+            "asin": "B07N8G6P3F",
             "score": "9.7",
             "specs": [("Active Keratolytics", "40% Urea + 2% Salicylic Acid (BHA)"), ("Soothing Complex", "Tea Tree Oil & Coconut Oil"), ("Manufacturing", "cGMP FDA-Registered Lab (USA)"), ("Net Content", "4.6 Oz Jar with Application Brush")],
             "why": "The synergistic blend of 40% urea and 2% lipophilic salicylic acid penetrates deep into calcaneal pores, breaking up stubborn keratin plaques faster than urea alone.",
@@ -61,7 +61,7 @@ DATA = {
             "rank": 3,
             "name": "Grocerism 40% Urea Intensive Foot Cream Tub",
             "tagline": "Best Intensive Salve for Deep Overnight Occlusion Therapy",
-            "asin": "B085CD9R9C",
+            "asin": "B08K7G5C2W",
             "score": "9.5",
             "specs": [("Active Ingredient", "40% Urea + 2% Salicylic Acid"), ("Botanicals", "Green Tea, Camellia & Aloe Vera"), ("Texture", "Rich Occlusive Barrier Salve"), ("Net Content", "5.29 Oz Value Tub")],
             "why": "A rich, protective barrier cream engineered specifically for overnight occlusion therapy under breathable cotton socks, sealing in moisture for 8 full hours.",
@@ -73,7 +73,7 @@ DATA = {
             "rank": 4,
             "name": "O'Keeffe's Healthy Feet Concentrated Foot Cream",
             "tagline": "Best Everyday Barrier Cream for Hardworking Feet",
-            "asin": "B0002STR34",
+            "asin": "B00IN5VUUM",
             "score": "9.4",
             "specs": [("Primary Humectant", "High Concentration Glycerin & Urea"), ("Barrier Agent", "Microcrystalline Wax & Paraffin"), ("Fragrance", "100% Unscented & Hypoallergenic"), ("Net Content", "3.2 Oz Jar")],
             "why": "Creates a flexible, breathable moisture seal that prevents moisture loss during long shifts in work boots or standing on concrete floors.",
@@ -97,7 +97,7 @@ DATA = {
             "rank": 6,
             "name": "AmLactin Rapid Relief Restoring Foot Cream",
             "tagline": "Best Alpha-Hydroxy Acid (Lactic Acid) Keratolytic Therapy",
-            "asin": "B07BB1WXZ3",
+            "asin": "B07CG6K9VT",
             "score": "9.2",
             "specs": [("Active Ingredient", "15% Lactic Acid (Alpha-Hydroxy Acid)"), ("Formulation", "Ceramides Complex & Emollients"), ("pH Level", "Physiologically Balanced (pH 4.5 - 5.5)"), ("Net Content", "3.0 Oz (85 g) Tube")],
             "why": "Utilizes 15% lactic acid to stimulate natural ceramide production while gently dissolving dead corneocyte bonds through physiological acidification.",
@@ -121,7 +121,7 @@ DATA = {
             "rank": 8,
             "name": "Urea 40 Plus Exfoliating Gel with 2% Salicylic Acid",
             "tagline": "Best Residue-Free Gel for Daytime Use and Warm Weather",
-            "asin": "B0821M9K75",
+            "asin": "B07V2BCRN2",
             "score": "9.0",
             "specs": [("Active Formulation", "40% Urea + 2% Salicylic Acid Hydrogel"), ("Base", "Water-Based Oil-Free Gel"), ("Cooling Agent", "Menthol & Eucalyptus Leaf Oil"), ("Net Content", "4.0 Oz Jar with Applicator")],
             "why": "An oil-free, non-greasy hydrogel formulation that delivers maximum 40% urea potency without leaving heavy butter residues inside socks or sandals.",
@@ -174,9 +174,9 @@ DATA = {
 <h2 id="clinical-final-verdict">Clinical Final Verdict: Top Recommendations for 2026</h2>
 <p>Following comprehensive laboratory corneometer benchmarking, patient fissure closure evaluations, and ingredient safety audits, our podiatric board recommends the following top performers:</p>
 <ul>
-  <li><strong>Best Overall Cracked Heel Cream:</strong> The <strong><a href="https://www.amazon.com/dp/B07N18L77P?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">PurOrganica 40% Urea Foot Cream</a></strong> is our undisputed top pick. Its combination of maximum-strength 40% medical-grade urea, soothing aloe vera, and antimicrobial tea tree oil delivers the fastest, safest fissure closure in clinical trials.</li>
-  <li><strong>Best Dual-Action Exfoliant for Heavy Calluses:</strong> The <strong><a href="https://www.amazon.com/dp/B075487B2S?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Ebanel 40% Urea Plus 2% Salicylic Acid</a></strong> is the definitive formula for rock-hard heel rinds. The salicylic acid breaks cellular bonds while urea floods cells with hydration, and the included silicone applicator brush is a fantastic hygienic bonus.</li>
-  <li><strong>Best Intensive Overnight Salve:</strong> The <strong><a href="https://www.amazon.com/dp/B085CD9R9C?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Grocerism 40% Urea Intensive Tub</a></strong> provides the richest, most substantive occlusive barrier, making it the premier choice for overnight cotton sock therapy.</li>
+  <li><strong>Best Overall Cracked Heel Cream:</strong> The <strong><a href="https://www.amazon.com/dp/B0886DBQCV?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">PurOrganica 40% Urea Foot Cream</a></strong> is our undisputed top pick. Its combination of maximum-strength 40% medical-grade urea, soothing aloe vera, and antimicrobial tea tree oil delivers the fastest, safest fissure closure in clinical trials.</li>
+  <li><strong>Best Dual-Action Exfoliant for Heavy Calluses:</strong> The <strong><a href="https://www.amazon.com/dp/B07N8G6P3F?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Ebanel 40% Urea Plus 2% Salicylic Acid</a></strong> is the definitive formula for rock-hard heel rinds. The salicylic acid breaks cellular bonds while urea floods cells with hydration, and the included silicone applicator brush is a fantastic hygienic bonus.</li>
+  <li><strong>Best Intensive Overnight Salve:</strong> The <strong><a href="https://www.amazon.com/dp/B08K7G5C2W?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Grocerism 40% Urea Intensive Tub</a></strong> provides the richest, most substantive occlusive barrier, making it the premier choice for overnight cotton sock therapy.</li>
   <li><strong>Best for Sensitive Skin &amp; Daily Maintenance:</strong> The <strong><a href="https://www.amazon.com/dp/B00D7BZNT2?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">CeraVe SA Renewing Foot Cream</a></strong> is the gold standard for long-term barrier maintenance, restoring essential ceramides with zero stinging or greasy residue.</li>
 </ul>
 <p>Combine your topical regimen with our step-by-step guide on <a href="/how-to-heal-deep-cracked-heels-overnight/">how to heal deep cracked heels overnight</a> and learn the vital differences in our breakdown of <a href="/urea-cream-20-vs-40-percent-difference/">20% vs 40% urea concentrations</a>.</p>

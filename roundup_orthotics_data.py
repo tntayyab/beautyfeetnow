@@ -73,7 +73,7 @@ DATA = {
             "rank": 4,
             "name": "Samurai Insoles Ninjas Orthotic Arch Support",
             "tagline": "Best Low-Profile Orthotic for Tight-Fitting Shoes & Loafers",
-            "asin": "B017042WFE",
+            "asin": "B00U3LGB3A",
             "score": "9.3",
             "specs": [("Design", "Ultra-Slim Low-Profile Shell"), ("Internal Core", "Dynamic Spring-Like Polymer Core"), ("Fit Profile", "Slides Under Existing Factory Insoles"), ("Origin", "Designed by Podiatrists in the USA")],
             "why": "An ultra-slim, flexible orthotic that slides effortlessly into low-volume dress shoes, flats, and cleats without cramping toe room or elevating the heel out of the shoe.",
@@ -85,7 +85,7 @@ DATA = {
             "rank": 5,
             "name": "Easyfeet Plantar Fasciitis Heavy Duty Arch Support Insoles",
             "tagline": "Best Heavy-Duty Orthotic for High Body Weight & Heavy Work Boots",
-            "asin": "B07RZZT4N2",
+            "asin": "B07D38D9M2",
             "score": "9.2",
             "specs": [("Weight Capacity", "Engineered for 220+ lbs / Heavy Duty"), ("Core Material", "Reinforced High-Strength TPU Shell"), ("Shock Absorption", "Gel Heel Pad + Forefoot PU Foam"), ("Target", "Work Boots, Standing Shifts & High BMI")],
             "why": "Reinforced with a heavy-duty TPU arch core that will not collapse under high body mass (220+ lbs) or the rugged punishment of heavy industrial work boots.",
@@ -97,7 +97,7 @@ DATA = {
             "rank": 6,
             "name": "Dr. Scholl's Plantar Fasciitis Sizing Orthotics",
             "tagline": "Best Accessible Drugstore Orthotic with Shock Guard Gel",
-            "asin": "B01M3W0CXP",
+            "asin": "B0009EIMW0",
             "score": "9.0",
             "specs": [("Technology", "Shock Guard Plantar Protection System"), ("Arch Support", "Reinforced Flexible Thermoplastic Arch"), ("Format", "Full Length with Trim-to-Fit Guidelines"), ("Availability", "Widely Available in Pharmacies")],
             "why": "A clinically designed, budget-friendly drugstore orthotic featuring targeted Shock Guard gel in the heel to absorb aggravating heel strike shocks.",
@@ -177,7 +177,7 @@ DATA = {
   <li><strong>Best Overall for Overpronation &amp; Flat Feet:</strong> The <strong><a href="https://www.amazon.com/dp/B000XY5Q6C?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Superfeet GREEN Professional-Grade</a></strong> remains the undisputed gold standard. Its deep rearfoot cup and rigid polymer stabilizer cap control calcaneal eversion better than any other OTC device tested, restoring alignment to knees, hips, and ankles.</li>
   <li><strong>Best for Plantar Fasciitis &amp; Heel Spur Pain:</strong> The <strong><a href="https://www.amazon.com/dp/B000KGOHCS?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Powerstep Pinnacle Arch Support</a></strong> provides the ideal balance between plush Poron shock-absorbing cushioning and semi-rigid arch stability, making it the premier choice for acute heel pain.</li>
   <li><strong>Best Value Daily Insole with Metatarsal Pad:</strong> The <strong><a href="https://www.amazon.com/dp/B075YB2J6Q?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">WalkHero Plantar Fasciitis Insoles</a></strong> deliver dependable TPU arch support, deep heel cupping, and forefoot metatarsal cushioning at a budget-friendly price.</li>
-  <li><strong>Best Low-Profile for Tight Dress Shoes &amp; Cleats:</strong> The <strong><a href="https://www.amazon.com/dp/B017042WFE?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Samurai Insoles Ninjas</a></strong> slip seamlessly under glued factory liners, providing dynamic spring-like arch rebound without crowding tight dress shoes.</li>
+  <li><strong>Best Low-Profile for Tight Dress Shoes &amp; Cleats:</strong> The <strong><a href="https://www.amazon.com/dp/B00U3LGB3A?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Samurai Insoles Ninjas</a></strong> slip seamlessly under glued factory liners, providing dynamic spring-like arch rebound without crowding tight dress shoes.</li>
 </ul>
 <p>Learn how to accurately determine your foot arch type with our <a href="/how-to-tell-if-you-have-flat-feet-or-high-arches/">3-step wet paper footprint test</a>, compare <a href="/rigid-vs-soft-orthotic-insoles-plantar-fasciitis/">rigid vs soft orthotic insoles</a>, and explore the clinical signs of <a href="/signs-you-need-custom-orthotics-vs-otc-insoles/">when you need custom prescription orthotics</a>.</p>
 """,

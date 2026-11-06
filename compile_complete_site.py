@@ -18,14 +18,14 @@ print(f"Loaded {len(ALL_ARTICLES)} total master articles.")
 # Side Rail Data
 SIDE_RAIL = {
     'callus-removers-and-tools': [
-        {'rank': 1, 'name': 'Amope Pedi Perfect Wet & Dry', 'score': '9.8', 'img': '/assets/images/products/amope-pedi-perfect.webp?v=2.0', 'asin': 'B018EN59VC', 'why': 'Dual-speed IPX7 waterproof roller that safely exfoliates hardened stratum corneum without friction burns.'},
-        {'rank': 2, 'name': 'Own Harmony CR900 High-Torque', 'score': '9.6', 'img': '/assets/images/products/own-harmony-cr900.webp?v=2.0', 'asin': 'B00V498L3U', 'why': 'High-torque 2,000 RPM motor with pressure-lock sensor to prevent stalling against stubborn heel plaques.'},
-        {'rank': 3, 'name': 'PRITECH 3-Roller Rechargeable', 'score': '9.4', 'img': '/assets/images/products/pritech-3-roller.webp?v=2.0', 'asin': 'B07DN9B4P5', 'why': 'Three interchangeable mineral quartz grits and integrated LED battery readout for safe home maintenance.'}
+        {'rank': 1, 'name': 'Amope Pedi Perfect Wet & Dry', 'score': '9.8', 'img': '/assets/images/products/amope-pedi-perfect.webp?v=2.0', 'asin': 'B00LE99PA2', 'why': 'Dual-speed IPX7 waterproof roller that safely exfoliates hardened stratum corneum without friction burns.'},
+        {'rank': 2, 'name': 'Own Harmony CR900 High-Torque', 'score': '9.6', 'img': '/assets/images/products/own-harmony-cr900.webp?v=2.0', 'asin': 'B00YO6DW74', 'why': 'High-torque 2,000 RPM motor with pressure-lock sensor to prevent stalling against stubborn heel plaques.'},
+        {'rank': 3, 'name': 'PRITECH 3-Roller Rechargeable', 'score': '9.4', 'img': '/assets/images/products/pritech-3-roller.webp?v=2.0', 'asin': 'B075QD7B78', 'why': 'Three interchangeable mineral quartz grits and integrated LED battery readout for safe home maintenance.'}
     ],
     'foot-creams-and-lotions': [
-        {'rank': 1, 'name': 'PurOrganica 40% Urea Foot Cream', 'score': '9.8', 'img': '/assets/images/products/purorganica-urea-40.webp?v=2.0', 'asin': 'B07N18L77P', 'why': 'High-potency keratolytic formula enriched with tea tree oil and aloe vera to dissolve deep heel fissures within 7 days.'},
-        {'rank': 2, 'name': 'Ebanel 40% Urea Plus Salicylic', 'score': '9.7', 'img': '/assets/images/products/ebanel-urea-40-plus.webp?v=2.0', 'asin': 'B075487B2S', 'why': 'Dual-action 2% salicylic acid and 40% urea blend that provides intensive desquamation and lipid replenishment.'},
-        {'rank': 3, 'name': 'Grocerism 40% Intensive Tub', 'score': '9.5', 'img': '/assets/images/products/grocerism-urea-40-tub.webp?v=2.0', 'asin': 'B085CD9R9C', 'why': 'Rich emollient barrier salve designed for overnight occlusion therapy under breathable cotton socks.'}
+        {'rank': 1, 'name': 'PurOrganica 40% Urea Foot Cream', 'score': '9.8', 'img': '/assets/images/products/purorganica-urea-40.webp?v=2.0', 'asin': 'B0886DBQCV', 'why': 'High-potency keratolytic formula enriched with tea tree oil and aloe vera to dissolve deep heel fissures within 7 days.'},
+        {'rank': 2, 'name': 'Ebanel 40% Urea Plus Salicylic', 'score': '9.7', 'img': '/assets/images/products/ebanel-urea-40-plus.webp?v=2.0', 'asin': 'B07N8G6P3F', 'why': 'Dual-action 2% salicylic acid and 40% urea blend that provides intensive desquamation and lipid replenishment.'},
+        {'rank': 3, 'name': 'Grocerism 40% Intensive Tub', 'score': '9.5', 'img': '/assets/images/products/grocerism-urea-40-tub.webp?v=2.0', 'asin': 'B08K7G5C2W', 'why': 'Rich emollient barrier salve designed for overnight occlusion therapy under breathable cotton socks.'}
     ],
     'foot-massagers-and-spas': [
         {'rank': 1, 'name': 'Miko Shiatsu Foot Massager', 'score': '9.8', 'img': '/assets/images/products/miko-shiatsu-massager.webp?v=2.0', 'asin': 'B0797G8736', 'why': 'Deep-kneading rotational nodes with targeted plantar fascia arch stretch and gentle infrared heat therapy.'},
@@ -63,35 +63,35 @@ RELATED_POOL = [
 TOP_PRODUCT_BY_SLUG = {
     'how-to-use-electric-callus-remover-safely': {
         'name': 'Amope Pedi Perfect Wet & Dry Electronic Foot File',
-        'asin': 'B018EN59VC',
+        'asin': 'B00LE99PA2',
         'score': '9.8',
         'img': '/assets/images/products/amope-pedi-perfect.webp?v=2.0',
         'why': 'Dual-speed waterproof roller with automatic pressure safety lock that prevents thermal friction burns during home callus removal.'
     },
     'nano-glass-foot-file-vs-electric-callus-remover': {
         'name': 'Own Harmony CR900 High-Torque Rechargeable',
-        'asin': 'B00V498L3U',
+        'asin': 'B00YO6DW74',
         'score': '9.6',
         'img': '/assets/images/products/own-harmony-cr900.webp?v=2.0',
         'why': 'High-torque 2,000 RPM motor with pressure sensor, delivering fast debulking speed without stalling against stubborn heel calluses.'
     },
     'why-do-foot-calluses-keep-coming-back': {
         'name': 'PRITECH 3-Roller Rechargeable Electric Callus Remover',
-        'asin': 'B07DN9B4P5',
+        'asin': 'B075QD7B78',
         'score': '9.4',
         'img': '/assets/images/products/pritech-3-roller.webp?v=2.0',
         'why': 'Three mineral quartz grits (fine, medium, coarse) and digital battery display for sustained routine prevention of recurrent hyperkeratosis.'
     },
     'urea-cream-20-vs-40-percent-difference': {
         'name': 'PurOrganica 40% Urea Foot Cream with Tea Tree Oil',
-        'asin': 'B07N18L77P',
+        'asin': 'B0886DBQCV',
         'score': '9.8',
         'img': '/assets/images/products/purorganica-urea-40.webp?v=2.0',
         'why': 'Maximum strength 40% clinical urea formula enriched with tea tree oil and aloe vera to dissolve thick keratin plaques within 7 days.'
     },
     'how-to-heal-deep-cracked-heels-overnight': {
         'name': 'Ebanel 40% Urea Plus 2% Salicylic Acid Cream',
-        'asin': 'B075487B2S',
+        'asin': 'B07N8G6P3F',
         'score': '9.7',
         'img': '/assets/images/products/ebanel-urea-40-plus.webp?v=2.0',
         'why': 'Dual-action 2% BHA and 40% urea keratolytic formula designed for intensive overnight occlusion repair under breathable cotton socks.'
@@ -493,7 +493,7 @@ def render_article_html(art):
           <!-- KEY TAKEAWAYS BOX -->
           <div class="takeaways">
             <div class="takeaways-head">
-              <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
               Key Clinical Takeaways &amp; Rules
             </div>
             <ul class="takeaways-list">

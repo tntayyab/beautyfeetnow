@@ -37,7 +37,7 @@ DATA = {
             "rank": 1,
             "name": "Amope Pedi Perfect Wet & Dry Electronic Foot File",
             "tagline": "Best Overall Electric Callus Remover for Everyday Use",
-            "asin": "B018EN59VC",
+            "asin": "B00LE99PA2",
             "score": "9.8",
             "specs": [("Motor Speed", "2 Speeds (1,800 / 2,200 RPM)"), ("Waterproof Rating", "IPX7 Full Submersion"), ("Roller Type", "Fine & Coarse Mineral Quartz"), ("Battery Runtime", "45 Minutes Rechargeable")],
             "why": "The Amope Pedi Perfect Wet & Dry is the gold standard for clinical home pedicure care. Its dual-speed motor allows patients to transition from coarse calcaneal debridement to fine arch contouring without frictional thermal spikes.",
@@ -49,7 +49,7 @@ DATA = {
             "rank": 2,
             "name": "Own Harmony CR900 High-Torque Rechargeable Callus Remover",
             "tagline": "Best Heavy-Duty Grinder for Stubborn, Thick Heel Plaques",
-            "asin": "B00V498L3U",
+            "asin": "B00YO6DW74",
             "score": "9.6",
             "specs": [("Motor Speed", "2,000 RPM Constant Torque"), ("Waterproof Rating", "Splash Resistant"), ("Roller Type", "3 Mineral Crystal Grits"), ("Battery Runtime", "60 Minutes Li-ion")],
             "why": "Engineered with a high-torque DC motor that does not stall even when applying the maximum recommended 150 grams of clinical downforce against stubborn hypertrophic plaques.",
@@ -61,7 +61,7 @@ DATA = {
             "rank": 3,
             "name": "PRITECH 3-Roller Rechargeable Electric Callus Remover",
             "tagline": "Best Value with Digital Battery Readout & Triple Grits",
-            "asin": "B07DN9B4P5",
+            "asin": "B075QD7B78",
             "score": "9.4",
             "specs": [("Motor Speed", "Dual Speed (1,900 / 2,200 RPM)"), ("Waterproof Rating", "IPX7 Waterproof"), ("Roller Type", "3 Micro-Quartz Rollers"), ("Battery Runtime", "120 Minutes Extended")],
             "why": "Provides exceptional battery longevity and real-time LED percentage readout, preventing frustrating mid-treatment power cutoffs during bilateral foot debridement.",
@@ -73,7 +73,7 @@ DATA = {
             "rank": 4,
             "name": "Care me Powerful Electric Foot Callus Remover",
             "tagline": "Best Commercial-Grade Motor for Heavy-Duty Weekly Regimens",
-            "asin": "B00PV92H1Q",
+            "asin": "B08R9Z2H8M",
             "score": "9.2",
             "specs": [("Motor Speed", "Fast 2,400 RPM High Cadence"), ("Waterproof Rating", "Water-Resistant Head"), ("Roller Type", "Coarse Mineral Crystals"), ("Battery Runtime", "50 Minutes NiMH")],
             "why": "Features a high-speed 2,400 RPM rotational cadence that reduces active treatment time by over 40% when debulking thick, widespread keratin buildup.",
@@ -85,7 +85,7 @@ DATA = {
             "rank": 5,
             "name": "Rikans Colossal Foot Rasp & Callus Remover",
             "tagline": "Best Non-Electric Manual Rasp for Instant Calcaneal Debulking",
-            "asin": "B07T2K9R3H",
+            "asin": "B00VPNE57O",
             "score": "9.1",
             "specs": [("Blade Material", "304 Surgical Grade Stainless Steel"), ("Surface Area", "Large 5.5 x 2.5 Inch Paddle"), ("Operation", "Manual Bi-Directional Rasp"), ("Maintenance", "Autoclave & Sanitizer Safe")],
             "why": "The ultimate mechanical rasp for severe, thick calluses that need immediate debulking before transitioning to electronic rotary maintenance.",
@@ -97,7 +97,7 @@ DATA = {
             "rank": 6,
             "name": "Bona Fide Beauty Czech Nano Glass Foot File",
             "tagline": "Best Gentle Glass File for Sensitive, Thin, or Diabetic Skin",
-            "asin": "B0762G1X7F",
+            "asin": "B071Z9WVRD",
             "score": "9.0",
             "specs": [("Material", "Czech Bohemian Tempered Glass"), ("Technology", "Micro-Etched Nano Glass Surface"), ("Safety", "Zero Micro-Laceration Risk"), ("Longevity", "Never Dulls, Lifetime Surface")],
             "why": "Micro-etched nano-glass ridges buff away keratin at the micron level, eliminating the micro-tears and jagged edges caused by traditional metal rasps.",
@@ -109,7 +109,7 @@ DATA = {
             "rank": 7,
             "name": "Finishing Touch Flawless Pedi Electronic Tool",
             "tagline": "Best Precision Wand for Intricate Toe Contours & Forefoot Calluses",
-            "asin": "B08VW4N64P",
+            "asin": "B08QMWH78F",
             "score": "8.9",
             "specs": [("Design", "Slender Ergonomic Wand Architecture"), ("Speed", "Dual Speed with Built-In LED"), ("Heads", "1 Coarse Roller & 1 Fine Polishing Head"), ("Power", "Rechargeable Li-Ion via USB")],
             "why": "Its pen-like wand architecture provides surgical precision around tight toe webbings, sub-metatarsal heads, and the lateral borders of the hallux.",
@@ -121,7 +121,7 @@ DATA = {
             "rank": 8,
             "name": "Scholl Velvet Smooth Express Pedi Electric Callus Remover",
             "tagline": "Trusted Classic Clinical Roller with Micralumina Mineral Coating",
-            "asin": "B00Q4K4W4S",
+            "asin": "B00K588G3M",
             "score": "8.8",
             "specs": [("Roller Tech", "Finely Ground Micralumina Minerals"), ("Power", "4 x AA Alkaline Batteries"), ("Safety", "Mechanical Pressure-Stop Safety Mechanism"), ("Handle", "Soft-Touch Ergonomic Mold")],
             "why": "A legacy podiatric favorite known for reliable mechanical pressure-stopping and balanced, gentle mineral exfoliation.",
@@ -164,10 +164,10 @@ DATA = {
 <h2 id="clinical-final-verdict">Clinical Final Verdict: Top Recommendations for 2026</h2>
 <p>After over 120 hours of clinical laboratory testing, torque measurement, and patient trials, our panel of board-certified podiatrists has identified the top performers across specific clinical categories:</p>
 <ul>
-  <li><strong>Best Overall Electric Callus Remover:</strong> The <strong><a href="https://www.amazon.com/dp/B018EN59VC?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Amope Pedi Perfect Wet &amp; Dry</a></strong> remains the undisputed industry leader. Its dual-speed waterproof motor, diamond-crystal roller, and induction charging dock offer an unparalleled combination of clinical efficacy, user safety, and long-term durability.</li>
-  <li><strong>Best for Severe, Thick Calcaneal Plaques:</strong> The <strong><a href="https://www.amazon.com/dp/B00V498L3U?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Own Harmony CR900</a></strong> is the definitive choice for intractable calluses. Its high-torque DC motor refuses to stall against stubborn keratin ridges, providing fast, professional-grade debridement.</li>
-  <li><strong>Best Value with Digital Readout:</strong> The <strong><a href="https://www.amazon.com/dp/B07DN9B4P5?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">PRITECH 3-Roller Rechargeable</a></strong> delivers extraordinary features—including 120 minutes of lithium-ion runtime, real-time LED battery percentage, and three roller heads—at an unbeatable price point.</li>
-  <li><strong>Best for Sensitive or Diabetic Skin:</strong> The <strong><a href="https://www.amazon.com/dp/B0762G1X7F?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Bona Fide Beauty Czech Nano Glass File</a></strong> provides ultra-gentle, micro-etched exfoliation with zero risk of micro-lacerations or friction burns, making it the safest choice for thin or vulnerable skin.</li>
+  <li><strong>Best Overall Electric Callus Remover:</strong> The <strong><a href="https://www.amazon.com/dp/B00LE99PA2?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Amope Pedi Perfect Wet &amp; Dry</a></strong> remains the undisputed industry leader. Its dual-speed waterproof motor, diamond-crystal roller, and induction charging dock offer an unparalleled combination of clinical efficacy, user safety, and long-term durability.</li>
+  <li><strong>Best for Severe, Thick Calcaneal Plaques:</strong> The <strong><a href="https://www.amazon.com/dp/B00YO6DW74?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Own Harmony CR900</a></strong> is the definitive choice for intractable calluses. Its high-torque DC motor refuses to stall against stubborn keratin ridges, providing fast, professional-grade debridement.</li>
+  <li><strong>Best Value with Digital Readout:</strong> The <strong><a href="https://www.amazon.com/dp/B075QD7B78?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">PRITECH 3-Roller Rechargeable</a></strong> delivers extraordinary features—including 120 minutes of lithium-ion runtime, real-time LED battery percentage, and three roller heads—at an unbeatable price point.</li>
+  <li><strong>Best for Sensitive or Diabetic Skin:</strong> The <strong><a href="https://www.amazon.com/dp/B071Z9WVRD?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Bona Fide Beauty Czech Nano Glass File</a></strong> provides ultra-gentle, micro-etched exfoliation with zero risk of micro-lacerations or friction burns, making it the safest choice for thin or vulnerable skin.</li>
 </ul>
 <p>For optimal foot health, integrate your mechanical filing regimen with daily <a href="/urea-cream-20-vs-40-percent-difference/">urea cream application</a> and supportive <a href="/best-orthotic-insoles-for-flat-feet/">orthotic insoles</a> to address the underlying biomechanical friction causing your calluses to form.</p>
 """,

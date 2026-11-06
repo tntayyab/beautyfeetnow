@@ -99,14 +99,14 @@ def strip_pagination(html):
 def fix_svg_attributes(html):
     html = re.sub(
         r'<svg class="trust-icon"\s*(?:width="[^"]*"\s*height="[^"]*"\s*)?viewBox="0 0 24 24">',
-        r'<svg class="trust-icon" width="32" height="32" viewBox="0 0 24 24">',
+        r'<svg class="trust-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0D7A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
         html
     )
     def fix_cat_svg(match):
         prefix = match.group(1)
         svg_tag = match.group(2)
         if 'width=' not in svg_tag:
-            svg_tag = '<svg width="24" height="24" viewBox="0 0 24 24">'
+            svg_tag = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0D7A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
         return prefix + svg_tag
 
     html = re.sub(
