@@ -374,6 +374,7 @@ def render_article_html(art):
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="yandex-verification" content="e4afa2ce4345655a">
 <title>{art['title']} | Beauty Feet Now</title>
 <meta name="description" content="{art['metaDescription']}">
 <link rel="canonical" href="{BASE_URL}/{art['slug']}/">

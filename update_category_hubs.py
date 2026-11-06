@@ -260,6 +260,7 @@ def render_category_html(cat):
 </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="yandex-verification" content="e4afa2ce4345655a">
 <title>{cat['title']} | Beauty Feet Now</title>
 <meta name="description" content="{cat['metaDescription']}">
 <link rel="canonical" href="{BASE_URL}/{cat['slug']}/">
