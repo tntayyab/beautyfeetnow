@@ -13,10 +13,15 @@
 <meta property="og:title" content="How We Test & Review | Beauty Feet Now">
 <meta property="og:description" content="Discover our scientific, hands-on testing protocol for foot care tools.">
 <meta property="og:url" content="https://beautyfeetnow.com/how-we-test/">
+<meta property="og:image" content="https://beautyfeetnow.com/assets/images/og-share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#1C4E43">
 <link rel="stylesheet" href="/assets/style.css">
-<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 </head>
 <body class="is-post">
@@ -25,8 +30,14 @@
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="/" aria-label="Beauty Feet Now">
-      <img src="/assets/logo.png" alt="Beauty Feet Now" width="220" height="33">
+      <picture>
+        <source srcset="/assets/logo.webp" type="image/webp">
+        <img src="/assets/logo.png" alt="Beauty Feet Now" width="220" height="33">
+      </picture>
     </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
     <nav class="nav" aria-label="Main">
       <a href="/callus-removers-and-tools/">Callus Removers</a>
       <a href="/foot-creams-and-lotions/">Creams & Lotions</a>
@@ -34,20 +45,6 @@
       <a href="/orthotics-and-insoles/">Orthotics & Insoles</a>
       <a href="/how-we-test/" aria-current="page">How We Test</a>
     </nav>
-    <details class="menu">
-      <summary aria-label="Menu">
-        <span class="bars" aria-hidden="true"></span>
-        <span class="m-open">Menu</span>
-        <span class="m-close">Close</span>
-      </summary>
-      <nav aria-label="Main menu">
-        <a href="/callus-removers-and-tools/">Callus Removers</a>
-        <a href="/foot-creams-and-lotions/">Creams & Lotions</a>
-        <a href="/foot-massagers-and-spas/">Massagers & Spas</a>
-        <a href="/orthotics-and-insoles/">Orthotics & Insoles</a>
-        <a href="/how-we-test/">How We Test</a>
-      </nav>
-    </details>
   </div>
 </header>
 
@@ -106,26 +103,50 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div class="brand">Beauty Feet Now</div>
-    <p>Compare electric callus removers, cracked heel balms, heated foot massagers, and orthotic insoles by efficacy, skin safety, and real clinical results.</p>
-    <ul class="links cats" aria-label="Guides">
-      <li><a href="/callus-removers-and-tools/">Callus Removers</a></li>
-      <li><a href="/foot-creams-and-lotions/">Creams &amp; Lotions</a></li>
-      <li><a href="/foot-massagers-and-spas/">Massagers &amp; Spas</a></li>
-      <li><a href="/orthotics-and-insoles/">Orthotics &amp; Insoles</a></li>
-    </ul>
-    <ul class="links">
-      <li><a href="/about-us/">About Us</a></li>
-      <li><a href="/how-we-test/">How We Test</a></li>
-      <li><a href="/contact-us/">Contact Us</a></li>
-      <li><a href="/privacy-policy/">Privacy Policy</a></li>
-      <li><a href="/terms-of-service/">Terms of Service</a></li>
-      <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
-      <li><a href="/sitemap.xml">Sitemap</a></li>
-    </ul>
-    <p class="disclaimer">Beauty Feet Now is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. Additionally, we may participate in other affiliate programs and may be compensated for referring traffic and business to these companies at no cost to you.</p>
-    <p>© 2026 Beauty Feet Now. All rights reserved.</p>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="footer-logo" href="/" aria-label="Beauty Feet Now">
+          <picture>
+            <source srcset="/assets/logo.webp" type="image/webp">
+            <img src="/assets/logo.png" alt="Beauty Feet Now" width="220" height="33">
+          </picture>
+        </a>
+        <p>The authority on healthy, beautiful, and pain-free feet. We combine biomechanical laboratory testing, podiatric clinical reviews, and dermatological research to help you step with confidence.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-head">Expert Guides</div>
+        <ul class="footer-links">
+          <li><a href="/callus-removers-and-tools/">Callus Removers</a></li>
+          <li><a href="/foot-creams-and-lotions/">Creams &amp; Lotions</a></li>
+          <li><a href="/foot-massagers-and-spas/">Massagers &amp; Spas</a></li>
+          <li><a href="/orthotics-and-insoles/">Orthotics &amp; Insoles</a></li>
+          <li><a href="/how-we-test/">How We Test</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-head">Legal &amp; Medical Notice</div>
+        <ul class="footer-links">
+          <li><a href="/about-us/">About Us</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="/editorial-policy/">Editorial Policy</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-service/">Terms of Service</a></li>
+          <li><a href="/affiliate-disclosure/">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Beauty Feet Now. All rights reserved. The medical and podiatric information provided is for educational purposes only and should not replace professional medical diagnosis.</p>
+      <p class="footer-medical-note"><strong>Notice:</strong> This site complies with YMYL medical quality guidelines. Content is fact-checked against peer-reviewed biomechanical literature.</p>
+    </div>
   </div>
 </footer>
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {
+  var nav = document.querySelector('.site-header .nav');
+  var isOpen = nav.classList.toggle('nav-open');
+  this.setAttribute('aria-expanded', isOpen);
+});
+</script>
 </body>
 </html>

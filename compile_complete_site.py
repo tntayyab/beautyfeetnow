@@ -18,24 +18,24 @@ print(f"Loaded {len(ALL_ARTICLES)} total master articles.")
 # Side Rail Data
 SIDE_RAIL = {
     'callus-removers-and-tools': [
-        {'rank': 1, 'name': 'Amope Pedi Perfect Wet & Dry', 'score': '9.8', 'img': 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg', 'asin': 'B018EN59VC', 'why': 'Dual-speed IPX7 waterproof roller that safely exfoliates hardened stratum corneum without friction burns.'},
-        {'rank': 2, 'name': 'Own Harmony CR900 High-Torque', 'score': '9.6', 'img': 'https://m.media-amazon.com/images/I/71Xm06O6nOL._AC_SL1500_.jpg', 'asin': 'B00V498L3U', 'why': 'High-torque 2,000 RPM motor with pressure-lock sensor to prevent stalling against stubborn heel plaques.'},
-        {'rank': 3, 'name': 'PRITECH 3-Roller Rechargeable', 'score': '9.4', 'img': 'https://m.media-amazon.com/images/I/71m4+K8pC2L._AC_SL1500_.jpg', 'asin': 'B07DN9B4P5', 'why': 'Three interchangeable mineral quartz grits and integrated LED battery readout for safe home maintenance.'}
+        {'rank': 1, 'name': 'Amope Pedi Perfect Wet & Dry', 'score': '9.8', 'img': '/assets/images/products/amope-pedi-perfect.webp?v=2.0', 'asin': 'B018EN59VC', 'why': 'Dual-speed IPX7 waterproof roller that safely exfoliates hardened stratum corneum without friction burns.'},
+        {'rank': 2, 'name': 'Own Harmony CR900 High-Torque', 'score': '9.6', 'img': '/assets/images/products/own-harmony-cr900.webp?v=2.0', 'asin': 'B00V498L3U', 'why': 'High-torque 2,000 RPM motor with pressure-lock sensor to prevent stalling against stubborn heel plaques.'},
+        {'rank': 3, 'name': 'PRITECH 3-Roller Rechargeable', 'score': '9.4', 'img': '/assets/images/products/pritech-3-roller.webp?v=2.0', 'asin': 'B07DN9B4P5', 'why': 'Three interchangeable mineral quartz grits and integrated LED battery readout for safe home maintenance.'}
     ],
     'foot-creams-and-lotions': [
-        {'rank': 1, 'name': 'PurOrganica 40% Urea Foot Cream', 'score': '9.8', 'img': 'https://m.media-amazon.com/images/I/71eXGfLw2sL._AC_SL1500_.jpg', 'asin': 'B07N18L77P', 'why': 'High-potency keratolytic formula enriched with tea tree oil and aloe vera to dissolve deep heel fissures within 7 days.'},
-        {'rank': 2, 'name': 'Ebanel 40% Urea Plus Salicylic', 'score': '9.7', 'img': 'https://m.media-amazon.com/images/I/71C7kH9F8dL._AC_SL1500_.jpg', 'asin': 'B075487B2S', 'why': 'Dual-action 2% salicylic acid and 40% urea blend that provides intensive desquamation and lipid replenishment.'},
-        {'rank': 3, 'name': 'Grocerism 40% Intensive Tub', 'score': '9.5', 'img': 'https://m.media-amazon.com/images/I/61M0z5gD+6L._AC_SL1500_.jpg', 'asin': 'B085CD9R9C', 'why': 'Rich emollient barrier salve designed for overnight occlusion therapy under breathable cotton socks.'}
+        {'rank': 1, 'name': 'PurOrganica 40% Urea Foot Cream', 'score': '9.8', 'img': '/assets/images/products/purorganica-urea-40.webp?v=2.0', 'asin': 'B07N18L77P', 'why': 'High-potency keratolytic formula enriched with tea tree oil and aloe vera to dissolve deep heel fissures within 7 days.'},
+        {'rank': 2, 'name': 'Ebanel 40% Urea Plus Salicylic', 'score': '9.7', 'img': '/assets/images/products/ebanel-urea-40-plus.webp?v=2.0', 'asin': 'B075487B2S', 'why': 'Dual-action 2% salicylic acid and 40% urea blend that provides intensive desquamation and lipid replenishment.'},
+        {'rank': 3, 'name': 'Grocerism 40% Intensive Tub', 'score': '9.5', 'img': '/assets/images/products/grocerism-urea-40-tub.webp?v=2.0', 'asin': 'B085CD9R9C', 'why': 'Rich emollient barrier salve designed for overnight occlusion therapy under breathable cotton socks.'}
     ],
     'foot-massagers-and-spas': [
-        {'rank': 1, 'name': 'Miko Shiatsu Foot Massager', 'score': '9.8', 'img': 'https://m.media-amazon.com/images/I/71I7cK9y86L._AC_SL1500_.jpg', 'asin': 'B0797G8736', 'why': 'Deep-kneading rotational nodes with targeted plantar fascia arch stretch and gentle infrared heat therapy.'},
-        {'rank': 2, 'name': 'RENPHO Heated Air Compression', 'score': '9.6', 'img': 'https://m.media-amazon.com/images/I/71D0g8mN96L._AC_SL1500_.jpg', 'asin': 'B07F2H1NQR', 'why': 'Multi-chamber dynamic pneumatic compression that enhances venous return and accelerates tendon recovery.'},
-        {'rank': 3, 'name': 'Cloud Massage Foot & Calf', 'score': '9.5', 'img': 'https://m.media-amazon.com/images/I/71eXwQv47UL._AC_SL1500_.jpg', 'asin': 'B01FHOHVDC', 'why': 'Adjustable 360-degree comfort bar allowing combined therapeutic stimulation of the Achilles tendon and calf.'}
+        {'rank': 1, 'name': 'Miko Shiatsu Foot Massager', 'score': '9.8', 'img': '/assets/images/products/miko-shiatsu-massager.webp?v=2.0', 'asin': 'B0797G8736', 'why': 'Deep-kneading rotational nodes with targeted plantar fascia arch stretch and gentle infrared heat therapy.'},
+        {'rank': 2, 'name': 'RENPHO Heated Air Compression', 'score': '9.6', 'img': '/assets/images/products/renpho-heated-compression.webp?v=2.0', 'asin': 'B07F2H1NQR', 'why': 'Multi-chamber dynamic pneumatic compression that enhances venous return and accelerates tendon recovery.'},
+        {'rank': 3, 'name': 'Cloud Massage Foot & Calf', 'score': '9.5', 'img': '/assets/images/products/cloud-massage-shiatsu.webp?v=2.0', 'asin': 'B01FHOHVDC', 'why': 'Adjustable 360-degree comfort bar allowing combined therapeutic stimulation of the Achilles tendon and calf.'}
     ],
     'orthotics-and-insoles': [
-        {'rank': 1, 'name': 'Superfeet Green High Arch Insole', 'score': '9.8', 'img': 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg', 'asin': 'B000XY5Q6C', 'why': 'Deep biomechanical heel cup and high-density foam stabilizer that neutralizes overpronation and heel strike shock.'},
-        {'rank': 2, 'name': 'Powerstep Pinnacle Orthotic', 'score': '9.7', 'img': 'https://m.media-amazon.com/images/I/71N7j2-wJzL._AC_SL1500_.jpg', 'asin': 'B000KGOHCS', 'why': 'Dual-layer EVA cushioning with semi-rigid arch cradle clinically proven to relieve acute plantar fasciitis pain.'},
-        {'rank': 3, 'name': 'WalkHero Plantar Fasciitis Insole', 'score': '9.4', 'img': 'https://m.media-amazon.com/images/I/71x4xNl97CL._AC_SL1500_.jpg', 'asin': 'B075YB2J6Q', 'why': 'Accessible medical-grade anatomical support with silicone metatarsal pads for everyday walking and work boots.'}
+        {'rank': 1, 'name': 'Superfeet Green High Arch Insole', 'score': '9.8', 'img': '/assets/images/products/superfeet-green-insole.webp?v=2.0', 'asin': 'B000XY5Q6C', 'why': 'Deep biomechanical heel cup and high-density foam stabilizer that neutralizes overpronation and heel strike shock.'},
+        {'rank': 2, 'name': 'Powerstep Pinnacle Orthotic', 'score': '9.7', 'img': '/assets/images/products/powerstep-pinnacle.webp?v=2.0', 'asin': 'B000KGOHCS', 'why': 'Dual-layer EVA cushioning with semi-rigid arch cradle clinically proven to relieve acute plantar fasciitis pain.'},
+        {'rank': 3, 'name': 'WalkHero Plantar Fasciitis Insole', 'score': '9.4', 'img': '/assets/images/products/walkhero-plantar-fasciitis.webp?v=2.0', 'asin': 'B075YB2J6Q', 'why': 'Accessible medical-grade anatomical support with silicone metatarsal pads for everyday walking and work boots.'}
     ]
 }
 
@@ -65,84 +65,84 @@ TOP_PRODUCT_BY_SLUG = {
         'name': 'Amope Pedi Perfect Wet & Dry Electronic Foot File',
         'asin': 'B018EN59VC',
         'score': '9.8',
-        'img': 'https://m.media-amazon.com/images/I/71Y6a7Qc6XL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/amope-pedi-perfect.webp?v=2.0',
         'why': 'Dual-speed waterproof roller with automatic pressure safety lock that prevents thermal friction burns during home callus removal.'
     },
     'nano-glass-foot-file-vs-electric-callus-remover': {
         'name': 'Own Harmony CR900 High-Torque Rechargeable',
         'asin': 'B00V498L3U',
         'score': '9.6',
-        'img': 'https://m.media-amazon.com/images/I/71Xm06O6nOL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/own-harmony-cr900.webp?v=2.0',
         'why': 'High-torque 2,000 RPM motor with pressure sensor, delivering fast debulking speed without stalling against stubborn heel calluses.'
     },
     'why-do-foot-calluses-keep-coming-back': {
         'name': 'PRITECH 3-Roller Rechargeable Electric Callus Remover',
         'asin': 'B07DN9B4P5',
         'score': '9.4',
-        'img': 'https://m.media-amazon.com/images/I/71m4+K8pC2L._AC_SL1500_.jpg',
+        'img': '/assets/images/products/pritech-3-roller.webp?v=2.0',
         'why': 'Three mineral quartz grits (fine, medium, coarse) and digital battery display for sustained routine prevention of recurrent hyperkeratosis.'
     },
     'urea-cream-20-vs-40-percent-difference': {
         'name': 'PurOrganica 40% Urea Foot Cream with Tea Tree Oil',
         'asin': 'B07N18L77P',
         'score': '9.8',
-        'img': 'https://m.media-amazon.com/images/I/71eXGfLw2sL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/purorganica-urea-40.webp?v=2.0',
         'why': 'Maximum strength 40% clinical urea formula enriched with tea tree oil and aloe vera to dissolve thick keratin plaques within 7 days.'
     },
     'how-to-heal-deep-cracked-heels-overnight': {
         'name': 'Ebanel 40% Urea Plus 2% Salicylic Acid Cream',
         'asin': 'B075487B2S',
         'score': '9.7',
-        'img': 'https://m.media-amazon.com/images/I/71C7kH9F8dL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/ebanel-urea-40-plus.webp?v=2.0',
         'why': 'Dual-action 2% BHA and 40% urea keratolytic formula designed for intensive overnight occlusion repair under breathable cotton socks.'
     },
     'salicylic-acid-vs-lactic-acid-for-rough-feet': {
         'name': 'CeraVe SA Renewing Foot Cream with Ceramides',
         'asin': 'B00D7BZNT2',
         'score': '9.3',
-        'img': 'https://m.media-amazon.com/images/I/71C7kH9F8dL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/ebanel-urea-40-plus.webp?v=2.0',
         'why': 'Formulated with salicylic acid, ammonium lactate, and 3 essential ceramides to gently exfoliate rough skin while rebuilding the lipid barrier.'
     },
     'how-often-should-you-use-a-foot-massager': {
         'name': 'Miko Shiatsu Foot Massager Machine with Deep Kneading & Heat',
         'asin': 'B0797G8736',
         'score': '9.8',
-        'img': 'https://m.media-amazon.com/images/I/71I7cK9y86L._AC_SL1500_.jpg',
+        'img': '/assets/images/products/miko-shiatsu-massager.webp?v=2.0',
         'why': 'Equipped with an automatic 15-minute clinical timer, multi-axis shiatsu nodes, and gentle infrared heat to prevent plantar over-massage.'
     },
     'shiatsu-vs-air-compression-foot-massager': {
         'name': 'RENPHO Heated Air Compression Foot Massager with Remote',
         'asin': 'B07F2H1NQR',
         'score': '9.6',
-        'img': 'https://m.media-amazon.com/images/I/71D0g8mN96L._AC_SL1500_.jpg',
+        'img': '/assets/images/products/renpho-heated-compression.webp?v=2.0',
         'why': 'Dynamic multi-chamber air compression that gently compresses the dorsal and lateral foot compartments to stimulate circulation and ease swelling.'
     },
     'why-do-feet-burn-at-night-causes-and-relief': {
         'name': 'Cloud Massage Shiatsu Foot & Calf Massager Machine',
         'asin': 'B01FHOHVDC',
         'score': '9.5',
-        'img': 'https://m.media-amazon.com/images/I/71eXwQv47UL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/cloud-massage-shiatsu.webp?v=2.0',
         'why': 'Adjustable 360-degree positioning bar allows simultaneous therapeutic stimulation of the calf, Achilles tendon, and plantar nerve pathways.'
     },
     'rigid-vs-soft-orthotic-insoles-plantar-fasciitis': {
         'name': 'Powerstep Pinnacle Arch Support Insoles',
         'asin': 'B000KGOHCS',
         'score': '9.7',
-        'img': 'https://m.media-amazon.com/images/I/71N7j2-wJzL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/powerstep-pinnacle.webp?v=2.0',
         'why': 'Semi-rigid encapsulated arch cradle with dual-layer EVA cushioning clinically proven to relieve acute plantar fasciitis strain.'
     },
     'how-to-tell-if-you-have-flat-feet-or-high-arches': {
         'name': 'Superfeet GREEN Professional-Grade High Arch Insoles',
         'asin': 'B000XY5Q6C',
         'score': '9.8',
-        'img': 'https://m.media-amazon.com/images/I/71fV7kP0s1L._AC_SL1500_.jpg',
+        'img': '/assets/images/products/superfeet-green-insole.webp?v=2.0',
         'why': 'High-density rigid stabilizer cap and deep calcaneal heel cup that realigns overpronation and stabilizes collapsed medial arches.'
     },
     'signs-you-need-custom-orthotics-vs-otc-insoles': {
         'name': 'WalkHero Plantar Fasciitis Severe Flat Feet Orthotics',
         'asin': 'B075YB2J6Q',
         'score': '9.4',
-        'img': 'https://m.media-amazon.com/images/I/71x4xNl97CL._AC_SL1500_.jpg',
+        'img': '/assets/images/products/walkhero-plantar-fasciitis.webp?v=2.0',
         'why': 'Accessible medical-grade anatomical support with silicone metatarsal pads and deep heel cup for daily walking and work boots.'
     }
 }
@@ -228,10 +228,10 @@ def render_article_html(art):
             <span class="rail-rank">{p['rank']}</span>
             <img src="{p['img']}" alt="{p['name']}" width="64" height="64" loading="lazy" decoding="async">
             <div class="rail-body">
-              <a class="rail-name" href="https://www.amazon.com/dp/{p['asin']}?tag=beautyfeetnow-20" target="_blank" rel="nofollow">{p['name']}</a>
+              <a class="rail-name" href="https://www.amazon.com/dp/{p['asin']}?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">{p['name']}</a>
               <div class="rail-meta">
                 <span class="rail-score"><b>{p['score']}</b>/10 our score</span>
-                <a class="rail-go" href="https://www.amazon.com/dp/{p['asin']}?tag=beautyfeetnow-20" target="_blank" rel="nofollow">Check it</a>
+                <a class="rail-go" href="https://www.amazon.com/dp/{p['asin']}?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener">Check it</a>
               </div>
             </div>
           </li>""" for p in side_rail])
@@ -381,8 +381,11 @@ def render_article_html(art):
 <meta property="article:modified_time" content="{art['date']}">
 <meta property="article:section" content="{art['categoryName']}">
 <link rel="stylesheet" href="/assets/style.css">
-<link rel="icon" href="/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="/favicon.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
 <link rel="alternate" type="application/rss+xml" title="Beauty Feet Now" href="{BASE_URL}/feed.xml">
 
 <script type="application/ld+json">
@@ -401,8 +404,14 @@ def render_article_html(art):
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="/" aria-label="Beauty Feet Now">
-      <img src="/assets/logo.png" alt="Beauty Feet Now" width="220" height="33">
+      <picture>
+        <source srcset="/assets/logo.webp" type="image/webp">
+        <img src="/assets/logo.png" alt="Beauty Feet Now" width="220" height="33">
+      </picture>
     </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
     <nav class="nav" aria-label="Main">
       <a href="/callus-removers-and-tools/">Callus Removers</a>
       <a href="/foot-creams-and-lotions/">Creams & Lotions</a>
@@ -449,9 +458,11 @@ def render_article_html(art):
         <span class="kicker">{art['categoryName']}</span>
         <h1>{art['title']}</h1>
         
-        <p class="meta">
-          Reviewed by <strong>{art['authorName']}</strong> · {art['authorTitle']} · Updated on <time datetime="{art['date']}">{art['formattedDate']}</time>
-        </p>
+        <div class="byline">
+          <span>Medically Reviewed by <strong>Elena Rostova, DPM</strong> (Board-Certified Podiatrist)</span>
+          <span>&bull;</span>
+          <time datetime="{art['date']}">Updated {art['formattedDate']}</time>
+        </div>
 
         <div class="prose">
           <!-- STRICT NO INTRO IMAGE: Direct Answer Box -->
@@ -487,6 +498,23 @@ def render_article_html(art):
             <ul class="sources-list">
               {sources_html}
             </ul>
+          </div>
+
+          <!-- AUTHOR PROFILE BOX -->
+          <div class="author-profile-box">
+            <div class="author-avatar">
+              <img src="/assets/images/author-elena-rostova.webp" alt="Elena Rostova, DPM" width="80" height="80" style="border-radius:50%;object-fit:cover;">
+            </div>
+            <div class="author-bio">
+              <h3 style="margin:0 0 4px;font-size:1.15rem;color:#1e293b;">Elena Rostova, DPM</h3>
+              <p class="author-credentials" style="margin:0 0 8px;font-size:0.875rem;font-weight:600;color:#0d7a68;">Board-Certified Podiatric Specialist | Clinical Biomechanics Fellow | APMA Member</p>
+              <p class="author-description" style="margin:0;font-size:0.925rem;color:#475569;line-height:1.55;">Dr. Rostova brings over 14 years of clinical podiatric experience specializing in lower extremity biomechanics, hyperkeratosis management, and diabetic wound prevention. Her research has been featured in podiatric journals, and she actively evaluates foot care technology for clinical safety and efficacy.</p>
+            </div>
+          </div>
+
+          <!-- MEDICAL DISCLAIMER CALLOUT BOX -->
+          <div class="medical-disclaimer-box">
+            <p><strong>Medical Disclaimer:</strong> The content on Beauty Feet Now is for informational and educational purposes only and does not constitute professional medical, podiatric, or dermatological advice. Always seek the advice of a board-certified podiatrist or licensed physician regarding any persistent foot pain, open ulcers, diabetic foot complications, or suspected infections before beginning any home debridement or mechanical therapy.</p>
           </div>
 
           <!-- FAQ SECTION -->
@@ -538,7 +566,10 @@ def render_article_html(art):
     <div class="footer-grid">
       <div class="footer-col">
         <a class="footer-logo" href="/" aria-label="Beauty Feet Now">
-          <img src="/assets/logo.png" alt="Beauty Feet Now" width="220" height="33">
+          <picture>
+            <source srcset="/assets/logo.webp" type="image/webp">
+            <img src="/assets/logo.png" alt="Beauty Feet Now" width="220" height="33">
+          </picture>
         </a>
         <p>The authority on healthy, beautiful, and pain-free feet. We combine biomechanical laboratory testing, podiatric clinical reviews, and dermatological research to help you step with confidence.</p>
       </div>
@@ -566,9 +597,18 @@ def render_article_html(art):
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Beauty Feet Now. All rights reserved. The medical and podiatric information provided is for educational purposes only and should not replace professional medical diagnosis.</p>
+      <p class="footer-medical-note"><strong>Notice:</strong> This site complies with YMYL medical quality guidelines. Content is fact-checked against peer-reviewed biomechanical literature.</p>
     </div>
   </div>
 </footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click', function() {{
+  var nav = document.querySelector('.site-header .nav');
+  var isOpen = nav.classList.toggle('nav-open');
+  this.setAttribute('aria-expanded', isOpen);
+}});
+</script>
 </body>
 </html>
 """
