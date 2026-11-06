@@ -10,3 +10,6 @@ test_*.py
 verify_*.py
 append_*.py
 fix_*.py
+
+.github/
+
