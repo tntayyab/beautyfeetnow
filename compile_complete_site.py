@@ -424,6 +424,7 @@ def render_article_html(art):
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
     </button>
     <nav class="nav" aria-label="Main">
+      <a href="/">Home</a>
       <a href="/callus-removers-and-tools/">Callus Removers</a>
       <a href="/foot-creams-and-lotions/">Creams & Lotions</a>
       <a href="/foot-massagers-and-spas/">Massagers & Spas</a>
