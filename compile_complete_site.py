@@ -285,10 +285,13 @@ def render_article_html(art):
         # After Section 2: Diagram 1
         elif idx == 1:
             body_sections_html += f"""
-          <div class="technical-diagram">
-            {art['diagram1']['svg']}
-            <div class="technical-diagram-caption">{art['diagram1']['caption']}</div>
-          </div>
+          <figure class="technical-diagram">
+            <picture>
+              <source srcset="/assets/images/diagrams/{art['slug']}-diagram1.webp" type="image/webp">
+              <img src="/assets/images/diagrams/{art['slug']}-diagram1.png" alt="{art['diagram1']['caption']}" width="800" height="370" loading="lazy">
+            </picture>
+            <figcaption class="technical-diagram-caption">{art['diagram1']['caption']}</figcaption>
+          </figure>
             """
             
         # After Section 3: Data Table & Product Box
@@ -306,17 +309,17 @@ def render_article_html(art):
           </div>
 
           <aside class="pbox" aria-label="Top Podiatrist Recommendation">
-            <span class="pbox-badge">★ TOP PODIATRIST RECOMMENDATION</span>
+            <span class="pbox-badge">&#9733; TOP PODIATRIST RECOMMENDATION</span>
             <div class="pbox-inner">
               <div class="pbox-img">
-                <img src="{top_product['img']}" alt="{top_product['name']}" width="160" height="160" loading="lazy">
+                <img src="{top_product['img']}" alt="{top_product['name']}" width="260" height="260" loading="lazy">
               </div>
               <div class="pbox-info">
                 <h3 class="pbox-title">{top_product['name']}</h3>
                 <p class="pbox-why"><strong>Clinical Evaluation:</strong> {top_product['why']}</p>
                 <div class="pbox-meta">
                   <span class="pbox-score"><strong>{top_product['score']}</strong> / 10 Podiatrist Score</span>
-                  <a class="pbox-btn" href="https://www.amazon.com/dp/{top_product['asin']}?tag=beautyfeetnow-20" target="_blank" rel="nofollow">Check Amazon Price</a>
+                  <a class="pbox-btn btn-amazon-cta" href="https://www.amazon.com/dp/{top_product['asin']}?tag=beautyfeetnow-20" target="_blank" rel="nofollow sponsored noopener"><span>&#128722; Check Price on Amazon &rarr;</span></a>
                 </div>
               </div>
             </div>
@@ -338,10 +341,13 @@ def render_article_html(art):
         # After Section 6: Diagram 2
         elif idx == 5:
             body_sections_html += f"""
-          <div class="technical-diagram">
-            {art['diagram2']['svg']}
-            <div class="technical-diagram-caption">{art['diagram2']['caption']}</div>
-          </div>
+          <figure class="technical-diagram">
+            <picture>
+              <source srcset="/assets/images/diagrams/{art['slug']}-diagram2.webp" type="image/webp">
+              <img src="/assets/images/diagrams/{art['slug']}-diagram2.png" alt="{art['diagram2']['caption']}" width="800" height="370" loading="lazy">
+            </picture>
+            <figcaption class="technical-diagram-caption">{art['diagram2']['caption']}</figcaption>
+          </figure>
             """
 
         # Video Embed: Only embed if not already included in section content (prevents duplicate videos)
@@ -494,7 +500,7 @@ def render_article_html(art):
           <!-- KEY TAKEAWAYS BOX -->
           <div class="takeaways">
             <div class="takeaways-head">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0D7A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:22px!important;height:22px!important;min-width:22px!important;max-width:22px!important;fill:none!important;stroke:#0D7A68!important;display:inline-block!important;flex-shrink:0!important;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" fill="none" stroke="#0D7A68" stroke-width="2"/><polyline points="22 4 12 14.01 9 11.01" fill="none" stroke="#0D7A68" stroke-width="2"/></svg>
               Key Clinical Takeaways &amp; Rules
             </div>
             <ul class="takeaways-list">

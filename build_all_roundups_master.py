@@ -200,7 +200,7 @@ def render_roundup_html(r):
                   <td><strong>{p['specs'][0][1]}</strong></td>
                   <td>{p['specs'][1][1]}</td>
                   <td><span class="badge-score"><b>{p['score']}</b>/10</span></td>
-                  <td><a class="btn btn-sm" href="https://www.amazon.com/dp/{p['asin']}?tag={AMZ_TAG}" target="_blank" rel="nofollow sponsored noopener">View &rarr;</a></td>
+                  <td><a class="btn-table-amazon" href="https://www.amazon.com/dp/{p['asin']}?tag={AMZ_TAG}" target="_blank" rel="nofollow sponsored noopener">Check Amazon &rarr;</a></td>
                 </tr>""" for p in prods])
 
     # Deep Review Cards
